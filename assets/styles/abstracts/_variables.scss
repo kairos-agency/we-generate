@@ -1,0 +1,53 @@
+$color-white: #fff;
+
+$color-dark: #0d1114;
+$color-dark-lighten: #222f39;
+
+$color-gray: #5f7988;
+$color-gray-lighten: #839ba8;
+
+$color-background: #efefef;
+$color-border: #819aa8;
+
+$color-primary: #268ef2;
+$color-primary-lighten: #7aaadd;
+
+$size-default: 16px;
+$size-tiny: 2.75vw;
+$size-small: 1.75vw;
+$size-medium: 1.25vw;
+$size-large: 1.1vw;
+$size-big: 0.9vw;
+$size-huge: 0.9vw;
+$size-enormous: 16px;
+$size-gigantic: 17px;
+$size-colossal: 18px;
+
+$from-tiny: 500px;
+$to-tiny: $from-tiny - 1;
+$from-small: 700px;
+$to-small: $from-small - 1;
+$from-medium: 1000px;
+$to-medium: $from-medium - 1;
+$from-large: 1200px;
+$to-large: $from-large - 1;
+$from-big: 1400px;
+$to-big: $from-big - 1;
+$from-huge: 1600px;
+$to-huge: $from-huge - 1;
+$from-enormous: 1800px;
+$to-enormous: $from-enormous - 1;
+$from-gigantic: 2000px;
+$to-gigantic: $from-gigantic - 1;
+$from-colossal: 2400px;
+$to-colossal: $from-colossal - 1;
+
+$container: 90vw;
+
+$speed: 0.5s;
+$speed-fast: 0.25s;
+$speed-slow: 1s;
+
+$ease: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+$power3Out: cubic-bezier(0.17, 0.67, 0.83, 0.67);

@@ -1,0 +1,42 @@
+p,
+h1,
+h2,
+h3,
+li,
+label,
+input,
+a,
+button,
+span,
+address {
+	font-family: 'Inter', sans-serif;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+	outline-color: $color-dark;
+}
+
+input,
+select,
+textarea {
+	&:focus {
+		outline-color: $color-dark;
+		outline-style: solid;
+		outline-width: 2px;
+	}
+}
+
+[type='search'] {
+	outline-offset: unset;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+	-webkit-appearance: none;
+}

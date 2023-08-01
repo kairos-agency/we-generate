@@ -1,0 +1,21 @@
+h1,
+h2 {
+	color: $color-dark;
+	font-weight: 500;
+	font-size: rem(1.7);
+	line-height: 1.2;
+
+	@media (min-width: $from-tiny) {
+		font-size: rem(2.8);
+	}
+
+	@media (min-width: $from-small) {
+		font-size: rem(4.5);
+	}
+}
+
+h3 {
+	font-size: rem(1.1);
+	color: $color-dark;
+	font-weight: 700;
+}

@@ -1,0 +1,26 @@
+{
+	"name": "neptune",
+	"version": "1.0.0",
+	"description": "Neptune is a green wordpress theme.",
+	"author": "Kairos Agency",
+	"license": "MIT",
+	"scripts": {
+		"dev": "webpack --watch",
+		"prod": "webpack"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.13",
+		"css-loader": "^6.7.2",
+		"mini-css-extract-plugin": "^2.7.0",
+		"node-sass": "^8.0.0",
+		"postcss": "^8.4.19",
+		"postcss-loader": "^7.0.1",
+		"sass-loader": "^13.2.0",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.0"
+	},
+	"dependencies": {
+		"embla-carousel": "8.0.0-rc11",
+		"jquery": "^3.6.1"
+	}
+}

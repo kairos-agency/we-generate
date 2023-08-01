@@ -1,0 +1,13 @@
+.container {
+    width: $container;
+    max-width: rem(62.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-max {
+    width: $container;
+    max-width: rem(81.75);
+    margin-right: auto;
+    margin-left: auto;
+}
