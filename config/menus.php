@@ -2,11 +2,16 @@
 
 function register_my_menu()
 {
-    register_nav_menu('menu-principal', __('Menu principal'));
-    register_nav_menu('menu-principal-pages', __('Menu principal Pages'));
-    register_nav_menu('menu-footer', __('Menu footer'));
-    register_nav_menu('menu-footer-pages', __('Menu footer Pages'));
-    register_nav_menu('menu-footer-bottom', __('Menu footer-bottom'));
+    register_nav_menu('main-menu', __('Main Menu'));
+    register_nav_menu('legal-menu', __('Legal Menu'));
 }
 
 add_action('init', 'register_my_menu');
+
+function custom_menu_description( $item_output, $item, $depth, $args ) {
+    if ( ! empty( $item->description ) ) {
+        $item_output .= '<span class="menu-description">' . esc_html( $item->description ) . '</span>';
+    }
+    return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'custom_menu_description', 10, 4 );
