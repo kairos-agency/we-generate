@@ -21,6 +21,7 @@
 	},
 	"dependencies": {
 		"embla-carousel": "8.0.0-rc11",
+		"gsap": "npm:@gsap/business@^3.12.2",
 		"jquery": "^3.6.1"
 	}
 }

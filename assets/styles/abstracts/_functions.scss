@@ -1,3 +1,16 @@
 @function rem($value) {
-	@return $value * 1rem;
+    @return $value * 1rem;
+}
+
+@mixin image($index, $opacity, $border-radius) {
+    &:nth-of-type(#{$index}) {
+        width: calc(100% - #{rem($index * 2)});
+        height: calc(100% - #{rem($index * 2)});
+        top: #{rem($index - 1)};
+        left: #{rem($index - 1)};
+        opacity: $opacity;
+        img {
+            border-radius: rem($border-radius);
+        }
+    }
 }

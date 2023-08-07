@@ -1,0 +1,19 @@
+h1 {
+    font-size: rem(2.2);
+    color: $color-green-2;
+    em {
+        font-family: 'dejanire-headline', serif;
+    }
+}
+
+@media (min-width: $from-small) {
+    h1 {
+        font-size: rem(4);
+    }
+}
+
+@media (min-width: $from-medium) {
+    h1 {
+        font-size: rem(6.25);
+    }
+}

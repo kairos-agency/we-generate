@@ -1,6 +1,6 @@
 nav {
     width: calc(100% - 2rem);
-    margin: rem(1) auto;
+    max-width: rem(40);
     padding: 0 rem(1);
     height: rem(5.5);
     background: rgba($color-white, 0.5);
@@ -10,6 +10,11 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: rem(1);
+    position: fixed;
+    top: rem(1);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
     .logo {
         width: rem(8.5);
         margin-left: rem(1.25);
@@ -96,11 +101,12 @@ nav {
 
 @media (min-width: $from-small) {
     nav {
-        width: fit-content;
+        width: 100%;
         margin: rem(1.6) auto;
-        gap: rem(5.25);
+        gap: rem(4.5);
         .menu {
             margin-right: 0;
+            gap: rem(4.5);
             > .menu-item-has-children {
                 > .sub-menu {
                     width: 110%;
