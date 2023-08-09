@@ -1,0 +1,24 @@
+header,
+section {
+    width: 100%;
+    position: relative;
+    .grid {
+        display: grid;
+        gap: rem(0.75);
+        will-change: opacity, transform;
+    }
+    h1,
+    p {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: $from-small) {
+    header,
+    section {
+        .grid {
+            gap: rem(1);
+        }
+    }
+}

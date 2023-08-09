@@ -54,9 +54,6 @@
 
 @media (min-width: $from-small) {
     .grid_image {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
         .image {
             div {
                 &:first-of-type {

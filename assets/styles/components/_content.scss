@@ -1,30 +1,17 @@
 .content {
-    width: 100%;
-    position: relative;
-    margin-top: rem(6);
     .grid {
-        display: grid;
-        gap: rem(0.75);
-        margin-bottom: rem(3.5);
-    }
-    h1,
-    p {
-        text-align: center;
+        padding: rem(6) 0 rem(3.5);
     }
     p {
         max-width: rem(32);
-        margin: 0 auto;
     }
 }
 
 @media (min-width: $from-small) {
     .content {
-        margin-top: rem(10);
         .grid {
-            gap: rem(1);
-            margin-bottom: rem(10);
+            padding: rem(10) 0;
         }
-
         p {
             max-width: rem(42);
         }
@@ -33,7 +20,9 @@
 
 @media (min-width: $from-medium) {
     .content {
-        margin-top: rem(15);
+        .grid {
+            padding: rem(15) 0 rem(10);
+        }
         p {
             max-width: rem(62);
         }
