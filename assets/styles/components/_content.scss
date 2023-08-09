@@ -1,9 +1,11 @@
 .content {
     width: 100%;
     position: relative;
+    margin-top: rem(6);
     .grid {
         display: grid;
         gap: rem(0.75);
+        margin-bottom: rem(3.5);
     }
     h1,
     p {
@@ -17,8 +19,10 @@
 
 @media (min-width: $from-small) {
     .content {
+        margin-top: rem(10);
         .grid {
             gap: rem(1);
+            margin-bottom: rem(10);
         }
 
         p {
@@ -29,6 +33,7 @@
 
 @media (min-width: $from-medium) {
     .content {
+        margin-top: rem(15);
         p {
             max-width: rem(62);
         }

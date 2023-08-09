@@ -7,14 +7,27 @@ p {
     }
 }
 
+p.overtitle {
+    font-size: rem(1);
+    color: $color-green-3;
+    text-transform: uppercase;
+    letter-spacing: rem(0.15);
+}
+
 @media (min-width: $from-small) {
     p {
         font-size: rem(1.5);
+    }
+    p.overtitle {
+        font-size: rem(1.2);
     }
 }
 
 @media (min-width: $from-medium) {
     p {
         font-size: rem(2.25);
+    }
+    p.overtitle {
+        font-size: rem(1.5);
     }
 }
