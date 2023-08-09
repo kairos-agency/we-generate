@@ -1,11 +1,12 @@
 .hero {
     width: 100%;
+    min-height: 100vh;
     position: relative;
-    margin-top: rem(9);
     .grid {
         display: grid;
         gap: rem(0.75);
-        margin-bottom: rem(3.5);
+        padding: rem(9) 0 rem(3.5);
+        will-change: opacity, transform;
     }
     h1,
     p {
@@ -19,10 +20,9 @@
 
 @media (min-width: $from-small) {
     .hero {
-        margin-top: rem(13);
         .grid {
             gap: rem(1);
-            margin-bottom: rem(10);
+            padding: rem(13) 0 rem(10);
         }
         p {
             max-width: rem(32);

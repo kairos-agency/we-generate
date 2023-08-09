@@ -1,7 +1,6 @@
 .content {
     width: 100%;
     position: relative;
-    margin-top: rem(5);
     .grid {
         display: grid;
         gap: rem(0.75);
@@ -18,7 +17,6 @@
 
 @media (min-width: $from-small) {
     .content {
-        margin-top: rem(20);
         .grid {
             gap: rem(1);
         }

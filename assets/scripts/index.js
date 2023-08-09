@@ -6,37 +6,62 @@ gsap.registerPlugin(ScrollTrigger)
 
 document.addEventListener('DOMContentLoaded', () => {
     if (window.matchMedia('(min-width: 700px)').matches) {
-        ScrollTrigger.create({
-            trigger: '.hero .image',
-            onUpdate: self => {
-                const progress = self.progress
+        setHeightOfImage()
+        setImageAnimation()
 
-                const scaleValue1 = 1 + (1.6 - 1) * progress
-                const scaleValue2 = 1 + (1.7 - 1) * progress
-                const scaleValue3 = 1 + (1.8 - 1) * progress
-                const scaleValue4 = 1 + (1.9 - 1) * progress
-                const scaleValue5 = 1 + (2 - 1) * progress
-                const scaleValue6 = 1 + (2.1 - 1) * progress
-                const scaleValue7 = 1 + (2.2 - 1) * progress
-
-                const opacity2 = 0.8 * (1 - progress)
-                const opacity3 = 0.6 * (1 - progress)
-                const opacity4 = 0.4 * (1 - progress)
-                const opacity5 = 0.2 * (1 - progress)
-                const opacity6 = 0.1 * (1 - progress)
-                const opacity7 = 0.05 * (1 - progress)
-
-                gsap.to('.image div:first-of-type', { scale: scaleValue1 })
-                gsap.to('.image div:nth-of-type(2)', { scale: scaleValue2, autoAlpha: opacity2 })
-                gsap.to('.image div:nth-of-type(3)', { scale: scaleValue3, autoAlpha: opacity3 })
-                gsap.to('.image div:nth-of-type(4)', { scale: scaleValue4, autoAlpha: opacity4 })
-                gsap.to('.image div:nth-of-type(5)', { scale: scaleValue5, autoAlpha: opacity5 })
-                gsap.to('.image div:nth-of-type(6)', { scale: scaleValue6, autoAlpha: opacity6 })
-                gsap.to('.image div:nth-of-type(7)', { scale: scaleValue7, autoAlpha: opacity7 })
-            },
-            start: `center center`,
-            end: 'bottom center',
-            pin: true
-        })
+        window.addEventListener('resize', setHeightOfImage)
     }
 })
+
+function getAbsoluteHeight(el) {
+    el = typeof el === 'string' ? document.querySelector(el) : el
+
+    var styles = window.getComputedStyle(el)
+    var margin = parseFloat(styles['marginTop']) + parseFloat(styles['marginBottom'])
+
+    return Math.ceil(el.offsetHeight + margin)
+}
+
+function setHeightOfImage() {
+    const heroGridHeight = getAbsoluteHeight('.hero .grid')
+    document.querySelector('.hero .grid_image').style.height = `calc(100% - ${heroGridHeight}px)`
+}
+
+function setImageAnimation() {
+    ScrollTrigger.create({
+        trigger: '.hero',
+        onUpdate: self => {
+            const progress = self.progress
+
+            gsap.to('.hero .grid', { y: -progress * 400, autoAlpha: 1 * (1 - progress * 2) })
+            gsap.to('.hero .image div:first-of-type', { scale: 1 + (1.6 - 1) * progress })
+            gsap.to('.hero .image div:nth-of-type(2)', {
+                scale: 1 + (1.7 - 1) * progress,
+                autoAlpha: 0.8 * (1 - progress)
+            })
+            gsap.to('.hero .image div:nth-of-type(3)', {
+                scale: 1 + (1.8 - 1) * progress,
+                autoAlpha: 0.6 * (1 - progress)
+            })
+            gsap.to('.hero .image div:nth-of-type(4)', {
+                scale: 1 + (1.9 - 1) * progress,
+                autoAlpha: 0.4 * (1 - progress)
+            })
+            gsap.to('.hero .image div:nth-of-type(5)', {
+                scale: 1 + (2 - 1) * progress,
+                autoAlpha: 0.2 * (1 - progress)
+            })
+            gsap.to('.hero .image div:nth-of-type(6)', {
+                scale: 1 + (2.1 - 1) * progress,
+                autoAlpha: 0.1 * (1 - progress)
+            })
+            gsap.to('.hero .image div:nth-of-type(7)', {
+                scale: 1 + (2.2 - 1) * progress,
+                autoAlpha: 0.05 * (1 - progress)
+            })
+        },
+        start: 'top top',
+        end: 'bottom top',
+        pin: true
+    })
+}

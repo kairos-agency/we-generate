@@ -1,16 +1,16 @@
 .grid_image {
     width: 100%;
-    margin-bottom: rem(2);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     .image {
         width: 100%;
-        aspect-ratio: 25 / 7;
-        margin: 0 auto;
-        position: relative;
         div {
-            position: absolute;
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
+            position: absolute;
+            transform-origin: bottom center;
             will-change: transform;
             &:first-of-type {
                 width: 65%;
@@ -28,7 +28,7 @@
                 left: calc(17.5% - 1rem);
                 opacity: 0.8;
                 z-index: 6;
-                border-radius: rem(0.4) rem(0.4);
+                border-radius: rem(0.4);
             }
             &:nth-of-type(3) {
                 width: calc(65% + 4rem);
@@ -37,7 +37,7 @@
                 left: calc(17.5% - 2rem);
                 opacity: 0.6;
                 z-index: 5;
-                border-radius: rem(0.6) rem(0.6);
+                border-radius: rem(0.6);
             }
             &:nth-of-type(4),
             &:nth-of-type(5),
@@ -55,18 +55,16 @@
 
 @media (min-width: $from-small) {
     .grid_image {
-        margin-bottom: rem(6.5);
         .image {
-            height: 100%;
             div {
                 &:first-of-type {
-                    border-radius: rem(0.625);
+                    border-radius: rem(0.625) rem(0.625) 0 0;
                 }
                 &:nth-of-type(2) {
-                    border-radius: rem(1.625) rem(1.625);
+                    border-radius: rem(1.625) rem(1.625) 0 0;
                 }
                 &:nth-of-type(3) {
-                    border-radius: rem(2.625) rem(2.625);
+                    border-radius: rem(2.625) rem(2.625) 0 0;
                 }
                 &:nth-of-type(4) {
                     display: block;
@@ -76,7 +74,7 @@
                     left: calc(17.5% - 3rem);
                     opacity: 0.4;
                     z-index: 4;
-                    border-radius: rem(3.625) rem(3.625);
+                    border-radius: rem(3.625) rem(3.625) 0 0;
                 }
                 &:nth-of-type(5) {
                     display: block;
@@ -86,7 +84,7 @@
                     left: calc(17.5% - 4rem);
                     opacity: 0.2;
                     z-index: 3;
-                    border-radius: rem(4.625) rem(4.625);
+                    border-radius: rem(4.625) rem(4.625) 0 0;
                 }
                 &:nth-of-type(6) {
                     display: block;
@@ -96,7 +94,7 @@
                     left: calc(17.5% - 5rem);
                     opacity: 0.1;
                     z-index: 2;
-                    border-radius: rem(5.625) rem(5.625);
+                    border-radius: rem(5.625) rem(5.625) 0 0;
                 }
                 &:nth-of-type(7) {
                     display: block;
@@ -106,39 +104,9 @@
                     left: calc(17.5% - 6rem);
                     opacity: 0.05;
                     z-index: 1;
-                    border-radius: rem(6.625) rem(6.625);
+                    border-radius: rem(6.625) rem(6.625) 0 0;
                 }
             }
         }
-    }
-}
-
-@media (min-width: $from-medium) {
-    .grid_image {
-        margin-bottom: rem(8);
-    }
-}
-
-@media (min-width: $from-large) {
-    .grid_image {
-        margin-bottom: rem(9);
-    }
-}
-
-@media (min-width: $from-big) {
-    .grid_image {
-        margin-bottom: rem(11);
-    }
-}
-
-@media (min-width: $from-huge) {
-    .grid_image {
-        margin-bottom: rem(12);
-    }
-}
-
-@media (min-width: $from-enormous) {
-    .grid_image {
-        margin-bottom: rem(14);
     }
 }

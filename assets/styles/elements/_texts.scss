@@ -2,6 +2,9 @@ p {
     font-size: rem(1.1);
     line-height: 1.4;
     color: $color-green-1;
+    &:empty {
+        display: none;
+    }
 }
 
 @media (min-width: $from-small) {
