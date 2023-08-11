@@ -4,22 +4,34 @@
     aspect-ratio: 25 / 7;
     .image {
         width: 100%;
-        div {
+        .image_paralax {
+            aspect-ratio: 25 / 7;
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            top: 0;
+            left: 10%;
+            opacity: 1;
+            z-index: 7;
+            transform-origin: bottom center;
+            will-change: transform;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                inset: 0;
+                border-radius: rem(0.2);
+            }
+        }
+        .image_bg {
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
             position: absolute;
             transform-origin: bottom center;
             will-change: transform;
-            &:first-of-type {
-                width: 80%;
-                height: 100%;
-                top: 0;
-                left: 10%;
-                opacity: 1;
-                z-index: 7;
-                border-radius: rem(0.2);
-            }
             &:nth-of-type(2) {
                 width: calc(80% + 1rem);
                 height: calc(100% + 1rem);
@@ -44,10 +56,6 @@
             &:nth-of-type(7) {
                 display: none;
             }
-            img {
-                width: 100%;
-                height: 100%;
-            }
         }
     }
 }
@@ -55,25 +63,27 @@
 @media (min-width: $from-small) {
     .grid_image {
         .image {
-            div {
-                &:first-of-type {
-                    width: 65%;
-                    left: 17.5%;
-                    border-radius: rem(0.625) rem(0.625);
+            .image_paralax {
+                width: 65%;
+                left: 17.5%;
+                img {
+                    border-radius: rem(0.625);
                 }
+            }
+            .image_bg {
                 &:nth-of-type(2) {
                     width: calc(65% + 2rem);
                     height: calc(100% + 2rem);
                     top: rem(-1);
                     left: calc(17.5% - 1rem);
-                    border-radius: rem(1.625) rem(1.625);
+                    border-radius: rem(1.625);
                 }
                 &:nth-of-type(3) {
                     width: calc(65% + 4rem);
                     height: calc(100% + 4rem);
                     top: rem(-2);
                     left: calc(17.5% - 2rem);
-                    border-radius: rem(2.625) rem(2.625);
+                    border-radius: rem(2.625);
                 }
                 &:nth-of-type(4) {
                     display: block;
@@ -83,7 +93,7 @@
                     left: calc(17.5% - 3rem);
                     opacity: 0.4;
                     z-index: 4;
-                    border-radius: rem(3.625) rem(3.625);
+                    border-radius: rem(3.625);
                 }
                 &:nth-of-type(5) {
                     display: block;
@@ -93,7 +103,7 @@
                     left: calc(17.5% - 4rem);
                     opacity: 0.2;
                     z-index: 3;
-                    border-radius: rem(4.625) rem(4.625);
+                    border-radius: rem(4.625);
                 }
                 &:nth-of-type(6) {
                     display: block;
@@ -103,7 +113,7 @@
                     left: calc(17.5% - 5rem);
                     opacity: 0.1;
                     z-index: 2;
-                    border-radius: rem(5.625) rem(5.625);
+                    border-radius: rem(5.625);
                 }
                 &:nth-of-type(7) {
                     display: block;
@@ -113,7 +123,7 @@
                     left: calc(17.5% - 6rem);
                     opacity: 0.05;
                     z-index: 1;
-                    border-radius: rem(6.625) rem(6.625);
+                    border-radius: rem(6.625);
                 }
                 &:nth-of-type(8) {
                     display: block;

@@ -7,8 +7,13 @@
     <?php if (isset($attributes['image']['url'])) : ?>
         <div class="grid_image">
             <div class="image">
-                <?php for ($i = 1; $i <= 8; $i++): ?>
-                    <div style="background-image: url('<?= esc_url($attributes['image']['url']); ?>')"></div>
+                <!-- <div class="image_paralax">
+                    <img src="<?= esc_url($attributes['image-background']['url']); ?>" alt="<?= esc_url($attributes['image-background']['alt']); ?>">
+                    <img src="<?= esc_url($attributes['image-middle']['url']); ?>" alt="<?= esc_url($attributes['image-middle']['alt']); ?>">
+                    <img src="<?= esc_url($attributes['image-top']['url']); ?>" alt="<?= esc_url($attributes['image-top']['alt']); ?>">
+                </div> -->
+                <?php for ($i = 1; $i <= 7; $i++): ?>
+                    <div class="image_bg" style="background-image: url('<?= esc_url($attributes['image']['url']); ?>')"></div>
                 <?php endfor; ?>
             </div>
         </div>

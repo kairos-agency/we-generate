@@ -37,7 +37,14 @@ function setImageAnimation() {
                 const progress = self.progress
 
                 gsap.to(element.querySelector('.grid'), { y: -progress * 400, autoAlpha: 1 * (1 - progress * 2) })
-                gsap.to(element.querySelector('.image div:first-of-type'), { scale: 1 + (1.6 - 1) * progress })
+
+                gsap.to(element.querySelector('.image .image_paralax'), { scale: 1 + (1.6 - 1) * progress })
+                gsap.to(element.querySelector('.image .image_paralax img:nth-of-type(2)'), { y: -progress * 40 })
+                gsap.to(element.querySelector('.image .image_paralax img:last-of-type'), {
+                    scale: 1 + (1.2 - 1) * progress,
+                    y: -progress * 50
+                })
+
                 gsap.to(element.querySelector('.image div:nth-of-type(2)'), { scale: 1 + (1.7 - 1) * progress * 1.05 })
                 gsap.to(element.querySelector('.image div:nth-of-type(3)'), { scale: 1 + (1.8 - 1) * progress * 1.1 })
                 gsap.to(element.querySelector('.image div:nth-of-type(4)'), { scale: 1 + (1.9 - 1) * progress * 1.15 })
