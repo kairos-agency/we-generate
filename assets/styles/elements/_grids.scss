@@ -1,7 +1,9 @@
 header,
 section {
     width: 100%;
+    min-height: 100vh;
     position: relative;
+    overflow: hidden;
     .grid {
         display: grid;
         gap: rem(0.75);
