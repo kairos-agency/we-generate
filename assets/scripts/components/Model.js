@@ -1,13 +1,7 @@
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-gsap.registerPlugin(ScrollTrigger)
-
 export default function Model() {
     const html = document.documentElement
     const canvas = document.getElementById('model')
     const modelContainer = document.querySelector('.model div')
-    const circle = document.querySelector('.model .circle')
     const context = canvas.getContext('2d')
 
     let currentFrame
@@ -66,6 +60,10 @@ export default function Model() {
         currentImage = frameIndex
         requestAnimationFrame(drawImage)
 
+        console.log(frameIndex)
+
+        animObject(frameIndex)
+
         if (scrollTop >= maxScrollTop && !isAnimationComplete) {
             isAnimationComplete = true
             drawImage()
@@ -77,18 +75,91 @@ export default function Model() {
     images[0].onload = () => {
         drawImage()
     }
+}
 
-    // ScrollTrigger.create({
-    //     trigger: '.model',
-    //     onUpdate: self => {
-    //         const progress = self.progress
-    //         console.log(progress)
+function animObject(frameIndex) {
+    const circle = document.querySelector('.model .circle')
+    const text1 = document.querySelector('.model .text1')
+    const text1Border = document.querySelector('.model .text1 span')
+    const text2 = document.querySelector('.model .text2')
 
-    //         // gsap.to(element.querySelector('.grid'), { y: -progress * 400, autoAlpha: 1 * (1 - progress * 2) })
-    //     },
-    //     start: 'top top',
-    //     end: 'bottom top',
-    //     pin: true,
-    //     markers: true
-    // })
+    let circleOpacity = 0
+    let circleScale = 0.4
+
+    let text1Opacity = 0
+    let text1Y = '150%'
+
+    let text1BorderScale = 0
+
+    let text2Opacity = 0
+
+    if (frameIndex >= 35 && frameIndex <= 70) {
+        const fraction = (frameIndex - 35) / (70 - 35)
+
+        circleOpacity = fraction
+        circleScale = 0.4 + fraction * 0.6
+    } else if (frameIndex >= 70 && frameIndex <= 135) {
+        circleOpacity = 1
+        circleScale = 1
+    } else if (frameIndex >= 135 && frameIndex <= 150) {
+        const fraction = 1 - (frameIndex - 135) / (150 - 135)
+
+        circleOpacity = fraction
+        circleScale = 1
+    } else if (frameIndex < 35 || frameIndex > 150) {
+        circleOpacity = 0
+        circleScale = 0.4
+    }
+
+    if (frameIndex >= 55 && frameIndex <= 70) {
+        const fraction = (frameIndex - 55) / (70 - 55)
+
+        text1Opacity = fraction
+        text1Y = `${(1 - fraction) * 150}%`
+    } else if (frameIndex >= 70 && frameIndex <= 135) {
+        text1Opacity = 1
+        text1Y = '0%'
+    } else if (frameIndex >= 135 && frameIndex <= 150) {
+        const fraction = 1 - (frameIndex - 135) / (150 - 135)
+
+        text1Opacity = fraction
+        text1Y = '0%'
+    } else if (frameIndex < 55 || frameIndex > 150) {
+        text1Opacity = 0
+        text1Y = '150%'
+    }
+
+    if (frameIndex >= 70 && frameIndex <= 100) {
+        const fraction = (frameIndex - 70) / (100 - 70)
+
+        text1BorderScale = fraction
+    } else if (frameIndex >= 100 && frameIndex <= 150) {
+        text1BorderScale = 1
+    } else if (frameIndex < 70 || frameIndex > 150) {
+        text1BorderScale = 0
+    }
+
+    if (frameIndex >= 200 && frameIndex <= 220) {
+        const fraction = (frameIndex - 200) / (220 - 200)
+
+        text2Opacity = fraction
+    } else if (frameIndex >= 220 && frameIndex <= 255) {
+        text2Opacity = 1
+    } else if (frameIndex >= 255 && frameIndex <= 270) {
+        const fraction = 1 - (frameIndex - 255) / (270 - 255)
+
+        text2Opacity = fraction
+    } else if (frameIndex < 200 || frameIndex > 270) {
+        text2Opacity = 0
+    }
+
+    circle.style.opacity = circleOpacity
+    circle.style.transform = `translate(-50%, -50%) scale(${circleScale})`
+
+    text1.style.opacity = text1Opacity
+    text1.style.transform = `translateY(${text1Y})`
+
+    text1Border.style.transform = `scaleY(${text1BorderScale})`
+
+    text2.style.opacity = text2Opacity
 }
