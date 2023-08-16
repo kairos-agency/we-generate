@@ -19,5 +19,3 @@
         </div>
     <?php endif; ?>
 </section>
-
-<div style="height: 150vh; background: red;"><p>lorem</p></div>
