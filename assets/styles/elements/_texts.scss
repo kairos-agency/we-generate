@@ -1,6 +1,6 @@
 p {
-    font-size: rem(1.1);
-    line-height: 1.4;
+    font-size: rem(1);
+    line-height: 1.6;
     color: $color-green-1;
     &:empty {
         display: none;
@@ -16,7 +16,7 @@ p.overtitle {
 
 @media (min-width: $from-small) {
     p {
-        font-size: rem(1.5);
+        font-size: rem(1.1);
     }
     p.overtitle {
         font-size: rem(1.2);
@@ -25,7 +25,7 @@ p.overtitle {
 
 @media (min-width: $from-medium) {
     p {
-        font-size: rem(2.25);
+        font-size: rem(1.5);
     }
     p.overtitle {
         font-size: rem(1.5);

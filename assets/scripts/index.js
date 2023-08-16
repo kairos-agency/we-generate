@@ -1,11 +1,14 @@
 import '../styles/index.scss'
+import Model from './components/Model'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (window.matchMedia('(min-width: 700px)').matches) {
+    new Model()
+
+    if (window.matchMedia('(min-width: 700px)').matches && document.querySelectorAll('.js-image')) {
         setHeightOfImage()
         setImageAnimation()
 
@@ -16,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function getAbsoluteHeight(el) {
     el = typeof el === 'string' ? document.querySelector(el) : el
 
-    var styles = window.getComputedStyle(el)
-    var margin = parseFloat(styles['marginTop']) + parseFloat(styles['marginBottom'])
+    let styles = window.getComputedStyle(el)
+    let margin = parseFloat(styles['marginTop']) + parseFloat(styles['marginBottom'])
 
     return Math.ceil(el.offsetHeight + margin)
 }

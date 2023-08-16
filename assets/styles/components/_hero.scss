@@ -1,27 +1,99 @@
 .hero {
     .grid {
-        padding: rem(9) 0 rem(3.5);
+        margin-bottom: rem(4);
+        div {
+            margin-top: rem(1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: rem(0.75);
+            p {
+                text-transform: uppercase;
+                padding: rem(0.75) rem(1.5);
+                line-height: 1.2;
+                border-top: 1px solid $color-green-2;
+                border-bottom: 1px solid $color-green-2;
+                &:first-of-type {
+                    letter-spacing: rem(0.1);
+                }
+                &:last-of-type {
+                    color: $color-white;
+                    font-weight: 700;
+                    background: $color-green-2;
+                }
+            }
+        }
     }
-    p {
-        max-width: rem(24);
+    .model {
+        width: 100%;
+        height: 1000vh;
+        position: relative;
+        div {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.sticky {
+                position: sticky;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            canvas {
+                width: 100%;
+                min-height: 100vh;
+                max-height: 100vh;
+                aspect-ratio: 16 / 9;
+                object-fit: cover;
+            }
+        }
     }
 }
 
 @media (min-width: $from-small) {
     .hero {
         .grid {
-            padding: rem(13) 0 rem(10);
-        }
-        p {
-            max-width: rem(32);
+            margin-bottom: rem(6);
         }
     }
 }
 
 @media (min-width: $from-medium) {
     .hero {
-        p {
-            max-width: rem(48);
+        .grid {
+            margin-bottom: rem(10.5);
+            div {
+                margin-top: rem(1.75);
+            }
         }
     }
 }
+
+// .hero {
+//     .grid {
+//         padding: rem(9) 0 rem(3.5);
+//     }
+//     p {
+//         max-width: rem(24);
+//     }
+// }
+
+// @media (min-width: $from-small) {
+//     .hero {
+//         .grid {
+//             padding: rem(13) 0 rem(10);
+//         }
+//         p {
+//             max-width: rem(32);
+//         }
+//     }
+// }
+
+// @media (min-width: $from-medium) {
+//     .hero {
+//         p {
+//             max-width: rem(48);
+//         }
+//     }
+// }

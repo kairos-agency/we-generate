@@ -47,7 +47,7 @@ nav {
                 display: block;
                 width: rem(1);
                 height: rem(1);
-                background-image: url('../images/icon-chevron.svg');
+                background-image: url('/images/icon-chevron.svg');
                 background-size: contain;
                 background-position: center center;
                 background-repeat: no-repeat;
@@ -102,7 +102,7 @@ nav {
 @media (min-width: $from-small) {
     nav {
         width: 100%;
-        margin: rem(1.6) auto;
+        margin: 0 auto;
         gap: rem(4.5);
         padding-right: rem(0.6);
         .menu {

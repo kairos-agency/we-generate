@@ -1,26 +1,36 @@
 header,
 section {
+    padding-top: rem(9);
     width: 100%;
     min-height: 100vh;
     position: relative;
-    overflow: hidden;
     .grid {
         display: grid;
-        gap: rem(0.75);
+        gap: rem(1);
         will-change: opacity, transform;
     }
     h1,
     p {
         text-align: center;
-        margin: 0 auto;
     }
 }
 
 @media (min-width: $from-small) {
     header,
     section {
+        padding-top: rem(11.5);
         .grid {
-            gap: rem(1);
+            gap: rem(2);
+        }
+    }
+}
+
+@media (min-width: $from-medium) {
+    header,
+    section {
+        padding-top: rem(16.5);
+        .grid {
+            gap: rem(3.5);
         }
     }
 }

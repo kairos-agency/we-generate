@@ -2,6 +2,7 @@ h1 {
     font-size: rem(2.2);
     color: $color-green-2;
     em {
+        display: block;
         font-family: 'dejanire-headline', serif;
     }
 }
