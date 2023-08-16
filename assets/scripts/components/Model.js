@@ -1,7 +1,13 @@
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
 export default function Model() {
     const html = document.documentElement
     const canvas = document.getElementById('model')
     const modelContainer = document.querySelector('.model div')
+    const circle = document.querySelector('.model .circle')
     const context = canvas.getContext('2d')
 
     let currentFrame
@@ -71,4 +77,18 @@ export default function Model() {
     images[0].onload = () => {
         drawImage()
     }
+
+    // ScrollTrigger.create({
+    //     trigger: '.model',
+    //     onUpdate: self => {
+    //         const progress = self.progress
+    //         console.log(progress)
+
+    //         // gsap.to(element.querySelector('.grid'), { y: -progress * 400, autoAlpha: 1 * (1 - progress * 2) })
+    //     },
+    //     start: 'top top',
+    //     end: 'bottom top',
+    //     pin: true,
+    //     markers: true
+    // })
 }

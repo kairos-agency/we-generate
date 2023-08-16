@@ -13,6 +13,7 @@
     <div class="model">
         <div>
             <canvas id="model"></canvas>
+            <span class="circle"></span>
         </div>
     </div>
 </header>
