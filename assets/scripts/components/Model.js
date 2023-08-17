@@ -1,15 +1,11 @@
 export default function Model() {
     const html = document.documentElement
     const canvas = document.getElementById('model')
-    const modelContainer = document.querySelector('.model div')
     const context = canvas.getContext('2d')
 
     let currentFrame
 
-    currentFrame = index =>
-        `http://localhost:8888/we-generate/wp-content/themes/neptune/images/model/${index
-            .toString()
-            .padStart(3, '0')}.webp`
+    currentFrame = index => `http://localhost:8888/we-generate/wp-content/themes/neptune/images/model/${index.toString().padStart(3, '0')}.webp`
 
     const frameCount = 605
 
@@ -49,18 +45,8 @@ export default function Model() {
         const scrollFraction = scrollTop / maxScrollTop
         let frameIndex = Math.max(0, Math.min(frameCount - 1, Math.ceil(scrollFraction * frameCount)))
 
-        if (modelContainer.getBoundingClientRect().top < window.innerHeight / 2 - modelContainer.offsetHeight / 2) {
-            modelContainer.classList.add('sticky')
-        }
-
-        if (modelContainer.offsetTop - modelContainer.offsetHeight / 2 < 0) {
-            modelContainer.classList.remove('sticky')
-        }
-
         currentImage = frameIndex
         requestAnimationFrame(drawImage)
-
-        console.log(frameIndex)
 
         animObject(frameIndex)
 
@@ -82,6 +68,8 @@ function animObject(frameIndex) {
     const text1 = document.querySelector('.model .text1')
     const text1Border = document.querySelector('.model .text1 span')
     const text2 = document.querySelector('.model .text2')
+    const text3 = document.querySelector('.model .text3')
+    const gradient = document.querySelector('.model .gradient')
 
     let circleOpacity = 0
     let circleScale = 0.4
@@ -92,6 +80,10 @@ function animObject(frameIndex) {
     let text1BorderScale = 0
 
     let text2Opacity = 0
+
+    let text3Opacity = 0
+
+    let gradientOpacity = 0
 
     if (frameIndex >= 35 && frameIndex <= 70) {
         const fraction = (frameIndex - 35) / (70 - 35)
@@ -153,6 +145,28 @@ function animObject(frameIndex) {
         text2Opacity = 0
     }
 
+    if (frameIndex >= 500 && frameIndex <= 520) {
+        const fraction = (frameIndex - 500) / (520 - 500)
+
+        text3Opacity = fraction
+    } else if (frameIndex >= 520 && frameIndex <= 585) {
+        text3Opacity = 1
+    } else if (frameIndex >= 585 && frameIndex <= 600) {
+        const fraction = 1 - (frameIndex - 585) / (600 - 585)
+
+        text3Opacity = fraction
+    } else if (frameIndex < 500 || frameIndex > 600) {
+        text3Opacity = 0
+    }
+
+    if (frameIndex >= 585 && frameIndex <= 600) {
+        const fraction = (frameIndex - 585) / (600 - 585)
+
+        gradientOpacity = fraction
+    } else if (frameIndex >= 600) {
+        gradientOpacity = 1
+    }
+
     circle.style.opacity = circleOpacity
     circle.style.transform = `translate(-50%, -50%) scale(${circleScale})`
 
@@ -162,4 +176,8 @@ function animObject(frameIndex) {
     text1Border.style.transform = `scaleY(${text1BorderScale})`
 
     text2.style.opacity = text2Opacity
+
+    text3.style.opacity = text3Opacity
+
+    gradient.style.opacity = gradientOpacity
 }

@@ -1,6 +1,5 @@
 .hero {
     .grid {
-        margin-bottom: rem(4);
         div {
             margin-top: rem(1);
             display: flex;
@@ -26,20 +25,16 @@
     }
     .model {
         width: 100%;
-        height: 1000vh;
+        height: 900vh;
         position: relative;
         div {
             width: 100%;
             height: 100vh;
-            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            &.sticky {
-                position: sticky;
-                top: 50%;
-                transform: translateY(-50%);
-            }
+            position: sticky;
+            top: 0;
         }
         canvas {
             width: 100%;
@@ -52,7 +47,8 @@
         }
         .circle {
             display: block;
-            height: 75vh;
+            width: 100%;
+            max-width: 75vh;
             border-radius: 50%;
             position: absolute;
             top: 50%;
@@ -85,13 +81,26 @@
                 transform-origin: top;
             }
         }
-        .text2 {
+        .text2,
+        .text3 {
             position: absolute;
             bottom: 5%;
             right: 5%;
             text-align: left;
+            font-size: rem(1.5);
             line-height: 1.2;
             z-index: 10;
+            opacity: 0;
+        }
+        .gradient {
+            display: block;
+            width: 100%;
+            height: 25vh;
+            background: linear-gradient(to top, $color-white, transparent);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 15;
             opacity: 0;
         }
     }
@@ -99,8 +108,11 @@
 
 @media (min-width: $from-small) {
     .hero {
-        .grid {
-            margin-bottom: rem(6);
+        .model {
+            .text2,
+            .text3 {
+                font-size: rem(3);
+            }
         }
     }
 }
@@ -108,7 +120,6 @@
 @media (min-width: $from-medium) {
     .hero {
         .grid {
-            margin-bottom: rem(10.5);
             div {
                 margin-top: rem(1.75);
             }
@@ -117,7 +128,8 @@
             .text1 {
                 font-size: rem(2);
             }
-            .text2 {
+            .text2,
+            .text3 {
                 font-size: rem(3.5);
             }
         }
