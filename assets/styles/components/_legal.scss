@@ -1,0 +1,44 @@
+.legal {
+    padding-bottom: rem(9);
+    @media (min-width: $from-small) {
+        padding-top: rem(11.5);
+    }
+    @media (min-width: $from-medium) {
+        padding-top: rem(16.5);
+    }
+    .container {
+        max-width: rem(55);
+    }
+    h1 {
+        margin-bottom: rem(2);
+        @media (min-width: $from-medium) {
+            margin-bottom: rem(4);
+        }
+    }
+    h2 {
+        margin: rem(2) 0 rem(1);
+        @media (min-width: $from-medium) {
+            margin: rem(4) 0 rem(2);
+        }
+    }
+    h1,
+    h2 {
+        font-size: rem(2.2);
+        text-align: left;
+        @media (min-width: $from-medium) {
+            font-size: rem(4);
+        }
+    }
+    p {
+        text-align: left;
+        font-size: rem(1);
+        line-height: 1.6;
+        color: $color-green-1;
+        @media (min-width: $from-small) {
+            font-size: rem(1.1);
+        }
+        @media (min-width: $from-medium) {
+            font-size: rem(1.2);
+        }
+    }
+}
