@@ -1,5 +1,6 @@
 .section {
 	.container {
+		max-width: rem(90);
 		.content {
 			.small-title {
 				font-size: rem(2);
@@ -16,7 +17,7 @@
 				.card {
 					padding: rem(3) 0;
 					border: 1px solid $color-gray-3;
-					border-radius: 16px;
+					border-radius: 4px;
 					width: 80vw;
 					p {
 						color: $color-green-2;
@@ -49,7 +50,7 @@
 				.cards {
 					.card {
 						padding: rem(5) 0;
-						width: rem(23);
+						width: 100%;
 						p {
 							font-size: rem(1.5);
 						}
@@ -89,7 +90,6 @@
 					}
 					ul {
 						list-style-type: square;
-						// list-style-position: outside;
 						list-style-position: inside;
 					}
 				}
@@ -102,7 +102,7 @@
 					max-width: 90rem;
 					margin: 2rem auto;
 					div {
-						width: 50%;
+						width: 100%;
 						padding: 0 rem(2);
 						border-bottom: none;
 						border-right: 1px solid $color-gray-2;

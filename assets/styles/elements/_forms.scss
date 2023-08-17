@@ -1,0 +1,62 @@
+form {
+    display: grid;
+    gap: rem(1.75);
+}
+label {
+    text-align: left;
+    color: $color-dark;
+    display: block;
+    font-weight: 500;
+    &.radio {
+        font-weight: 400;
+        color: $color-green-1;
+        cursor: pointer;
+    }
+}
+input:not([type='submit']),
+textarea,
+select {
+    display: block;
+    text-align: left;
+    width: 100%;
+    color: $color-dark;
+    padding: rem(1);
+    border-bottom: 1px solid $color-green-1;
+    &::placeholder {
+        color: $color-green-1;
+    }
+    &:focus {
+        outline: unset;
+    }
+}
+textarea {
+    height: rem(4);
+    resize: unset;
+}
+select {
+    cursor: pointer;
+}
+input[type='submit'] {
+    width: fit-content;
+    background: $color-green-3;
+    border-radius: rem(0.5);
+    padding: rem(1) rem(4);
+    font-size: rem(1.18);
+    font-weight: 500;
+    color: $color-white;
+    margin-top: rem(1.75);
+}
+.wpcf7-not-valid-tip {
+    margin-top: rem(0.5);
+    font-size: rem(1);
+}
+.wpcf7-spinner {
+    display: none;
+}
+.wpcf7-response-output {
+    border-radius: 5px;
+    font-family: 'MetrikTrial', sans-serif;
+}
+.wpcf7-list-item {
+    margin: 0 rem(1) 0 0;
+}

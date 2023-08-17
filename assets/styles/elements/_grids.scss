@@ -1,41 +1,36 @@
 header,
 section {
-	padding-top: rem(9);
-	width: 100%;
-	// min-height: 100vh;
-	position: relative;
-	// à enlever
-	&:last-of-type {
-		min-height: 100vh;
-	}
-	.grid {
-		display: grid;
-		gap: rem(1);
-		will-change: opacity, transform;
-	}
-	h1,
-	h2,
-	p {
-		text-align: center;
-	}
+    padding-top: rem(9);
+    width: 100%;
+    position: relative;
+    .grid {
+        display: grid;
+        gap: rem(1);
+        will-change: opacity, transform;
+    }
+    h1,
+    h2,
+    p {
+        text-align: center;
+    }
 }
 
 @media (min-width: $from-small) {
-	header,
-	section {
-		padding-top: rem(11.5);
-		.grid {
-			gap: rem(2);
-		}
-	}
+    header,
+    section {
+        padding-top: rem(11.5);
+        .grid {
+            gap: rem(2);
+        }
+    }
 }
 
 @media (min-width: $from-medium) {
-	header,
-	section {
-		padding-top: rem(16.5);
-		.grid {
-			gap: rem(3.5);
-		}
-	}
+    header,
+    section {
+        padding-top: rem(16.5);
+        .grid {
+            gap: rem(3.5);
+        }
+    }
 }
