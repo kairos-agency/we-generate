@@ -64,34 +64,34 @@
                 <div>
                     <h3><strong>Ethanol</strong> <br />Microdistillery</h3>
                     <p><strong>Produces</strong> premium bio-ethanol.</p>
-                    <bl>
+                    <ul>
                         <li>From Starch or Sugar</li>
                         <li>From Cellulose</li>
-                    </bl>
+                    </ul>
                 </div>
                 <div>
                     <h3><strong>CO2 Gas</strong> <br />Generator</h3>
                     <p><strong>Coproduces & Collects</strong> carbon dioxide.</p>
-                    <bl>
+                    <ul>
                         <li>Crop Fertilization</li>
                         <li>Commodity Resale</li>
-                    </bl>
+                    </ul>
                 </div>
                 <div>
                     <h3><strong>Biochar</strong> <br />power Plant</h3>
                     <p><strong>Generates</strong> heat and biochar.</p>
-                    <bl>
+                    <ul>
                         <li>Gasifier</li>
                         <li>Oil Heater</li>
-                    </bl>
+                    </ul>
                 </div>
                 <div>
                     <h3><strong>Plant Waste</strong> <br />Upcycler</h3>
                     <p><strong>Regenerates</strong> biomass completely.</p>
-                    <bl>
+                    <ul>
                         <li>Upcycles New Products</li>
                         <li>Disposes Costly Harmful Waste</li>
-                    </bl>
+                    </ul>
                 </div>
             </div>
         </div>
