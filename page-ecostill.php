@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: EcoStill
  */
@@ -22,10 +23,10 @@
             <span class="circle"></span>
             <p class="text1">
                 <span></span>
-                Add a competitive advantage<br/>to your business through<br/>regenerative design
+                Add a competitive advantage<br />to your business through<br />regenerative design
             </p>
-            <p class="text2">Use the CO2 to <em>cultivate</em><br/>& grow <em>cannabis</em></p>
-            <p class="text3">While producing<br/><em>ethanol</em>!</p>
+            <p class="text2">Use the CO2 to <em>cultivate</em><br />& grow <em>cannabis</em></p>
+            <p class="text3">While producing<br /><em>ethanol</em>!</p>
             <span class="gradient"></span>
         </div>
     </div>
@@ -40,15 +41,15 @@
     <div class="slides">
         <div class="slide active">
             <canvas id="loop1"></canvas>
-            <p>Replace Overhead with New Revenue<br/>Convert Costs to Profits</p>
+            <p>Replace Overhead with New Revenue<br />Convert Costs to Profits</p>
         </div>
         <div class="slide">
             <canvas id="loop2"></canvas>
-            <p>Transform Byproducts & Waste Into<br/>Additional Product & Co-products</p>
+            <p>Transform Byproducts & Waste Into<br />Additional Product & Co-products</p>
         </div>
         <div class="slide">
             <canvas id="loop3"></canvas>
-            <p>The EcoStill XL is fully automated,<br/>self-cleaning</p>
+            <p>The EcoStill XL is fully automated,<br />self-cleaning</p>
         </div>
     </div>
 </section>
@@ -120,6 +121,30 @@
                         <li>Disposes Costly Harmful Waste</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container grid">
+        <div class="content">
+            <div>
+                <p class="overtitle">ECONOMICALLY REGENERATIVE</p>
+                <h2>Return On Investment<br />50 Cycles / 1 Year</h2>
+                <p class="subtitle">Benefits</p>
+                <p class="small-title">Ethanol Micro Distillery • CO2 Power Plant • Fertilizer</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <p>Compact</p>
+                </div>
+                <div class="card">
+                    <p>Automated</p>
+                </div>
+                <div class="card">
+                    <p>Multifonctional</p>
+                </div>
+
             </div>
         </div>
     </div>
