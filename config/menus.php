@@ -3,6 +3,7 @@
 function register_my_menu()
 {
     register_nav_menu('main-menu', __('Main Menu'));
+    register_nav_menu('footer-menu', __('Footer Menu'));
     register_nav_menu('legal-menu', __('Legal Menu'));
 }
 
