@@ -1,5 +1,6 @@
 import '../styles/index.scss'
 import Model from './components/Model'
+import Slider from './components/Slider'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -7,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 document.addEventListener('DOMContentLoaded', () => {
     new Model()
+    new Slider()
 
     if (window.matchMedia('(min-width: 700px)').matches && document.querySelectorAll('.js-image')) {
         setHeightOfImage()

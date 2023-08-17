@@ -41,7 +41,7 @@ export default function Model() {
 
     const updateImage = () => {
         const scrollTop = html.scrollTop
-        const maxScrollTop = document.querySelector('.section').offsetTop - window.innerHeight
+        const maxScrollTop = document.querySelector('.slider').offsetTop - window.innerHeight
         const scrollFraction = scrollTop / maxScrollTop
         let frameIndex = Math.max(0, Math.min(frameCount - 1, Math.ceil(scrollFraction * frameCount)))
 
@@ -179,5 +179,5 @@ function animObject(frameIndex) {
 
     text3.style.opacity = text3Opacity
 
-    gradient.style.opacity = gradientOpacity
+    // gradient.style.opacity = gradientOpacity
 }

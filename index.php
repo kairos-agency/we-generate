@@ -25,6 +25,26 @@
     </div>
 </header>
 
-<section class="section" style="background: yellow;"></section>
+<section class="slider">
+    <div class="dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="slides">
+        <div class="slide active">
+            <canvas id="loop1"></canvas>
+            <p>Replace Overhead with New Revenue<br/>Convert Costs to Profits</p>
+        </div>
+        <div class="slide">
+            <canvas id="loop2"></canvas>
+            <p>Transform Byproducts & Waste Into<br/>Additional Product & Co-products</p>
+        </div>
+        <div class="slide">
+            <canvas id="loop3"></canvas>
+            <p>The EcoStill XL is fully automated,<br/>self-cleaning</p>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>
