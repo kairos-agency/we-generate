@@ -97,5 +97,29 @@
         </div>
     </div>
 </section>
+<section class="section">
+    <div class="container grid">
+        <div class="content">
+            <div>
+                <p class="overtitle">ECONOMICALLY REGENERATIVE</p>
+                <h2>Return On Investment<br />50 Cycles / 1 Year</h2>
+                <p class="subtitle">Benefits</p>
+                <p class="small-title">Ethanol Micro Distillery • CO2 Power Plant • Fertilizer</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <p>Compact</p>
+                </div>
+                <div class="card">
+                    <p>Automated</p>
+                </div>
+                <div class="card">
+                    <p>Multifonctional</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>

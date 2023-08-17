@@ -1,6 +1,11 @@
 .section {
 	.container {
 		.content {
+			.small-title {
+				font-size: rem(2);
+				color: $color-green-2;
+				margin: rem(2) 0;
+			}
 			.cards {
 				display: flex;
 				flex-direction: column;
@@ -11,7 +16,7 @@
 				.card {
 					padding: rem(3) 0;
 					border: 1px solid $color-gray-3;
-					border-radius: 4px;
+					border-radius: 16px;
 					width: 80vw;
 					p {
 						color: $color-green-2;
