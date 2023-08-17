@@ -47,4 +47,11 @@
     </div>
 </section>
 
+<section class="contact">
+    <div class="container grid">
+        <p class="overtitle">Contact</p>
+        <h2><em>Connect With Us</em></h2>
+    </div>
+</section>
+
 <?php get_footer(); ?>
