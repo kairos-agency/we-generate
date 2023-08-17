@@ -12,6 +12,7 @@
                 line-height: 1.2;
                 border-top: 1px solid $color-green-2;
                 border-bottom: 1px solid $color-green-2;
+                font-size: rem(1.1);
                 &:first-of-type {
                     letter-spacing: rem(0.1);
                 }
@@ -69,6 +70,7 @@
             transform: translateY(150%);
             opacity: 0;
             padding-left: rem(2);
+            color: $color-dark;
             span {
                 display: block;
                 width: 4px;
@@ -83,6 +85,7 @@
         }
         .text2,
         .text3 {
+            color: $color-dark;
             position: absolute;
             bottom: 5%;
             right: 5%;
@@ -108,6 +111,13 @@
 
 @media (min-width: $from-small) {
     .hero {
+        .grid {
+            div {
+                p {
+                    font-size: rem(1.4);
+                }
+            }
+        }
         .model {
             .text2,
             .text3 {
