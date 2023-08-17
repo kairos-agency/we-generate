@@ -5,6 +5,10 @@ p.subtitle {
 	&:empty {
 		display: none;
 	}
+	em {
+		display: inline-block;
+		font-family: 'dejanire-headline', serif;
+	}
 }
 
 p.overtitle {

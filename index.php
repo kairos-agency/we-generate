@@ -14,6 +14,13 @@
         <div>
             <canvas id="model"></canvas>
             <span class="circle"></span>
+            <p class="text1">
+                <span></span>
+                Add a competitive advantage<br/>to your business through<br/>regenerative design
+            </p>
+            <p class="text2">Use the CO2 to <em>cultivate</em><br/>& grow <em>cannabis</em></p>
+            <p class="text3">While producing<br/><em>ethanol</em>!</p>
+            <span class="gradient"></span>
         </div>
     </div> -->
 </header>
