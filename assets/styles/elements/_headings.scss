@@ -1,20 +1,32 @@
 h1 {
-    font-size: rem(2.2);
-    color: $color-green-2;
-    em {
-        display: block;
-        font-family: 'dejanire-headline', serif;
-    }
+	font-size: rem(2.2);
+	font-weight: 400;
+	color: $color-green-2;
+	em {
+		display: block;
+		font-family: 'dejanire-headline', serif;
+		font-style: italic;
+	}
+}
+h2 {
+	font-family: 'dejanire-headline', serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: rem(3.5);
+	color: $color-green-2;
+	margin: rem(0.5) 0 rem(1) 0;
 }
 
 @media (min-width: $from-small) {
-    h1 {
-        font-size: rem(4);
-    }
+	h1,
+	h2 {
+		font-size: rem(4);
+	}
 }
 
 @media (min-width: $from-medium) {
-    h1 {
-        font-size: rem(6.25);
-    }
+	h1,
+	h2 {
+		font-size: rem(6.25);
+	}
 }
