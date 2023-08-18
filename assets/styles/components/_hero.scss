@@ -192,30 +192,33 @@
     }
 }
 
-// .hero {
-//     .grid {
-//         padding: rem(9) 0 rem(3.5);
-//     }
-//     p {
-//         max-width: rem(24);
-//     }
-// }
+.hero-home {
+    overflow: hidden;
+    min-height: 100vh;
+    .grid {
+        padding: 0 0 rem(3.5);
+    }
+    .subtitle {
+        max-width: rem(24);
+        margin: 0 auto;
+    }
+}
 
-// @media (min-width: $from-small) {
-//     .hero {
-//         .grid {
-//             padding: rem(13) 0 rem(10);
-//         }
-//         p {
-//             max-width: rem(32);
-//         }
-//     }
-// }
+@media (min-width: $from-small) {
+    .hero-home {
+        .grid {
+            padding: 0 0 rem(10);
+        }
+        .subtitle {
+            max-width: rem(32);
+        }
+    }
+}
 
-// @media (min-width: $from-medium) {
-//     .hero {
-//         p {
-//             max-width: rem(48);
-//         }
-//     }
-// }
+@media (min-width: $from-medium) {
+    .hero-home {
+        .subtitle {
+            max-width: rem(48);
+        }
+    }
+}

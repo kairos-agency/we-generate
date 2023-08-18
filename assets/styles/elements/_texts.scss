@@ -1,37 +1,43 @@
-p.subtitle {
-	font-size: rem(1);
-	line-height: 1.6;
-	color: $color-green-1;
-	&:empty {
-		display: none;
-	}
-	em {
-		display: inline-block;
-		font-family: 'dejanire-headline', serif;
-	}
+p.subtitle,
+div.subtitle p {
+    font-size: rem(1);
+    line-height: 1.6;
+    color: $color-green-1;
+    &:empty {
+        display: none;
+    }
+    em {
+        display: inline-block;
+        font-family: 'dejanire-headline', serif;
+    }
+    strong {
+        color: $color-dark;
+    }
 }
 
 p.overtitle {
-	font-size: rem(1);
-	color: $color-green-3;
-	text-transform: uppercase;
-	letter-spacing: rem(0.15);
+    font-size: rem(1);
+    color: $color-green-3;
+    text-transform: uppercase;
+    letter-spacing: rem(0.15);
 }
 
 @media (min-width: $from-small) {
-	p.subtitle {
-		font-size: rem(1.1);
-	}
-	p.overtitle {
-		font-size: rem(1.2);
-	}
+    p.subtitle,
+    div.subtitle p {
+        font-size: rem(1.1);
+    }
+    p.overtitle {
+        font-size: rem(1.2);
+    }
 }
 
 @media (min-width: $from-medium) {
-	p.subtitle {
-		font-size: rem(1.5);
-	}
-	p.overtitle {
-		font-size: rem(1.5);
-	}
+    p.subtitle,
+    div.subtitle p {
+        font-size: rem(1.5);
+    }
+    p.overtitle {
+        font-size: rem(1.5);
+    }
 }

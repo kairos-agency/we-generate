@@ -1,7 +1,8 @@
-<header class="hero js-image">
+<header class="hero-home js-image">
     <div class="container grid">
         <h1><?= $attributes['title']; ?></h1>
-        <p><?= $attributes['text']; ?></p>
+        <div class="subtitle"><?= $attributes['text']; ?></div>
+        <a class="btn-primary btn-small" href="<?php bloginfo('url'); ?>/products/ecostill/">Discover more</a>
     </div>
     <?php if (isset($attributes['image']['url'])) : ?>
         <div class="grid_image">
