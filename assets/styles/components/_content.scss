@@ -125,8 +125,6 @@
 }
 
 .content-home {
-    min-height: 100vh;
-    overflow: hidden;
     .grid {
         padding: 0 0 rem(3.5);
     }
@@ -134,15 +132,42 @@
         max-width: rem(32);
         margin: 0 auto;
     }
+    .grid-3 {
+        display: grid;
+        gap: rem(2);
+        margin-top: rem(2);
+        p {
+            max-width: rem(13);
+            margin-top: rem(1);
+        }
+    }
+    h3 {
+        font-size: rem(1.5);
+        color: $color-dark;
+        text-align: center;
+    }
 }
 
 @media (min-width: $from-small) {
     .content-home {
+        min-height: 250vh;
         .grid {
-            padding: 0 0 rem(10);
+            padding: rem(34.5) 0 rem(10);
         }
         .subtitle {
             max-width: rem(42);
+        }
+        .grid-3 {
+            width: 100%;
+            max-width: rem(90);
+            margin: rem(2) auto 0;
+            grid-template-columns: repeat(3, 1fr);
+            p {
+                max-width: rem(19);
+            }
+        }
+        h3 {
+            font-size: rem(2.25);
         }
     }
 }
@@ -150,7 +175,7 @@
 @media (min-width: $from-medium) {
     .content-home {
         .grid {
-            padding: 0 0 rem(15);
+            padding: rem(33) 0 rem(15);
         }
         .subtitle {
             max-width: rem(62);
