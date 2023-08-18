@@ -37,4 +37,26 @@
     </div>
 </section>
 
+<section class="content-home js-image">
+    <div class="container grid">
+        <p class="overtitle">How we do it</p>
+        <h2>Design. Develop. Deploy.</h2>
+        <div class="subtitle">
+            <p>We Make Things Regenerative. <br/>Upgrade wasteful linear production to profitable circular systems.<br/>Develop ventures to capitalize upon regenerative opportunities.<br/>Leverage natural processes to fuel more efficient operations.</p>
+        </div>
+    </div>
+    <div class="grid_image">
+        <div class="image">
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
+        </div>
+    </div>
+</section>
+
+
 <?php get_footer(); ?>
