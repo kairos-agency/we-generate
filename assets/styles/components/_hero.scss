@@ -193,6 +193,7 @@
 }
 
 .hero-home {
+    overflow: hidden;
     .grid {
         padding: 0 0 rem(3.5);
     }
@@ -204,7 +205,8 @@
 
 @media (min-width: $from-small) {
     .hero-home {
-        min-height: 250vh;
+        min-height: 100vh;
+        padding-top: rem(10);
         .grid {
             padding: 0 0 rem(10);
         }

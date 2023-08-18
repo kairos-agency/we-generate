@@ -332,6 +332,7 @@
 }
 
 .content-home {
+    overflow: hidden;
     .container {
         max-width: 80vw;
     }
@@ -395,11 +396,14 @@
 
 @media (min-width: $from-small) {
     .content-home {
+        .grid_image {
+            margin-top: rem(10);
+        }
         &.js-image {
-            min-height: 250vh;
+            min-height: 100vh;
         }
         .grid {
-            padding: rem(34.5) 0 rem(10);
+            padding: 0 0 rem(10);
         }
         .subtitle {
             max-width: rem(42);
@@ -458,7 +462,7 @@
 @media (min-width: $from-medium) {
     .content-home {
         .grid {
-            padding: rem(33) 0 rem(15);
+            padding: 0 rem(15);
         }
         .subtitle {
             max-width: rem(62);
@@ -564,4 +568,8 @@
             margin: rem(5) auto 0;
         }
     }
+}
+
+.js-page-home-8 {
+    padding-bottom: rem(15);
 }

@@ -2,7 +2,7 @@ p.subtitle,
 div.subtitle p {
     font-size: rem(1);
     line-height: 1.6;
-    color: $color-green-1;
+    color: $color-green-2;
     &:empty {
         display: none;
     }
@@ -11,7 +11,7 @@ div.subtitle p {
         font-family: 'dejanire-headline', serif;
     }
     strong {
-        color: $color-dark;
+        color: $color-green-2;
     }
 }
 

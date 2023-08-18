@@ -41,14 +41,17 @@
     <div class="slides">
         <div class="slide active">
             <canvas id="loop1"></canvas>
+            <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/signe-du-dollar.png" alt="">
             <p>Replace Overhead with New Revenue<br />Convert Costs to Profits</p>
         </div>
         <div class="slide">
             <canvas id="loop2"></canvas>
+            <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/recycler.png" alt="">
             <p>Transform Byproducts & Waste Into<br />Additional Product & Co-products</p>
         </div>
         <div class="slide">
             <canvas id="loop3"></canvas>
+            <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/nettoyer.png" alt="">
             <p>The EcoStill XL is fully automated,<br />self-cleaning</p>
         </div>
     </div>
