@@ -7,6 +7,14 @@
 
 <?php get_header(); ?>
 
+<div id="loader" class="loader">
+    <p>Loading</p>
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+</div>
+
+
 <header class="hero js-model js-page-eco-1">
     <div class="container grid">
         <h1 anim-title>Next Level <em>Cannabis Production technology</em></h1>

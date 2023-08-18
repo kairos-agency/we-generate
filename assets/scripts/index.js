@@ -123,7 +123,6 @@ function setVisible(element, delay) {
         function callback(entries, observer) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    console.log('visible')
                     item.classList.add('visible')
                 }
             })

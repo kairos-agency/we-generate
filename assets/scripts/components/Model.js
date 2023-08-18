@@ -9,11 +9,44 @@ export default function Model() {
 
     const frameCount = 605
 
+    const loader = document.getElementById('loader')
+    const progressBar = document.querySelector('.progress-bar')
+
+    document.body.classList.add('no-scroll')
+
+    const updateProgressBar = loadedCount => {
+        const progress = (loadedCount / (frameCount + 1)) * 100
+        progressBar.style.width = `${progress}%`
+    }
+
+    const hideLoader = () => {
+        loader.style.display = 'none'
+
+        document.body.classList.remove('no-scroll')
+
+        updateImage()
+    }
+
+    const countLoadedImages = () => {
+        let loadedCount = 0
+        return () => {
+            loadedCount++
+            updateProgressBar(loadedCount)
+            console.log(loadedCount)
+            if (loadedCount === frameCount + 1) {
+                hideLoader()
+            }
+        }
+    }
+
+    const onImageLoad = countLoadedImages()
+
     const preloadImages = () => {
         const images = []
         for (let i = 0; i < frameCount; i++) {
             const img = new Image()
             img.src = currentFrame(i)
+            img.onload = onImageLoad
             images.push(img)
         }
         return images
@@ -22,6 +55,7 @@ export default function Model() {
     const images = preloadImages()
     const finalImage = new Image()
     finalImage.src = currentFrame(frameCount - 1)
+    finalImage.onload = onImageLoad
 
     let currentImage = 0
     let isAnimationComplete = false
@@ -60,6 +94,10 @@ export default function Model() {
 
     images[0].onload = () => {
         drawImage()
+    }
+
+    images[604].onload = () => {
+        hideLoader()
     }
 }
 
