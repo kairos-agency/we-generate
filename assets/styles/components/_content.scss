@@ -425,3 +425,62 @@
         color: $color-gray-3;
     }
 }
+
+.content-green-text {
+    padding-bottom: rem(9);
+    .container {
+        max-width: rem(90);
+    }
+    .grid-3 {
+        display: grid;
+        gap: rem(2);
+        margin-top: rem(2);
+        p {
+            margin-top: rem(1);
+        }
+    }
+    p,
+    h2,
+    h3 {
+        text-align: left;
+    }
+    h2 {
+        font-family: 'MetrikTrial', sans-serif;
+        font-style: normal;
+        font-size: rem(2);
+        line-height: 1.8;
+    }
+    h3 {
+        font-size: rem(1.5);
+        border-bottom: 1px solid $color-gray-2;
+        padding-bottom: rem(1);
+        margin-bottom: rem(1);
+    }
+}
+
+@media (min-width: $from-small) {
+    .content-green-text {
+        padding-bottom: rem(11.5);
+        .grid-3 {
+            width: 100%;
+            gap: rem(8);
+            margin: rem(2) auto 0;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        h2 {
+            font-size: rem(3);
+            margin-bottom: rem(6);
+        }
+        h3 {
+            font-size: rem(2.25);
+            padding-bottom: rem(2);
+            margin-bottom: rem(2);
+        }
+    }
+}
+
+@media (min-width: $from-medium) {
+    .content-green-text {
+        padding-bottom: rem(16.5);
+    }
+}

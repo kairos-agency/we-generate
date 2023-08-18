@@ -105,5 +105,45 @@
     </div>
 </section>
 
+<section class="content-green content-green-text">
+    <div class="container">
+        <h2>WeGenerate functions in three capacities :</h2>
+        <div class="grid-3">
+            <div>
+                <h3>Incubation</h3>
+                <p class="subtitle">WeGenerator<br/>Eco-Venture Development</p>
+            </div>
+            <div>
+                <h3>Investment</h3>
+                <p class="subtitle">WeGenesis<br/>Eco-Investment</p>
+            </div>
+            <div>
+                <h3>Engineering</h3>
+                <p class="subtitle">WeGen<br/>Eco-Technologies</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-green content-green-text js-image image-green-top">
+    <div class="container grid">
+    <h2>Envisioning industry that is better by Nature.<br/>Engaging investors with cutting edge innovation.<br/>Equipping founders with leading eco technology.</h2>
+    </div>
+    <div class="grid_image">
+        <div class="image">
+            <div class="image_paralax">
+                <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg" alt="">
+            </div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
+        </div>
+    </div>
+</section>
+
 
 <?php get_footer(); ?>
