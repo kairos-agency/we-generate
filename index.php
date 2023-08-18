@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<!-- <?php the_content(); ?> -->
+<?php the_content(); ?>
 
 <section class="content-home js-image">
     <div class="container grid">
@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="grid_image">
+    <div class="grid_image">
         <div class="image">
             <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
             <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
@@ -34,7 +34,7 @@
             <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
             <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
         </div>
-    </div> -->
+    </div>
 </section>
 <section class="content-home">
     <div class="container grid">
