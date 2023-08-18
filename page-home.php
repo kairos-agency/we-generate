@@ -34,15 +34,15 @@
     <div anim-image class="grid_image">
         <div class="image">
             <div class="image_paralax">
-                <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg" alt="">
+                <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg" alt="">
             </div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
         </div>
     </div>
 </section>
@@ -75,15 +75,15 @@
     <div anim-image class="grid_image">
         <div class="image">
             <div class="image_paralax">
-                <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg" alt="">
+                <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-3.jpg" alt="">
             </div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-3.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-3.jpg')"></div>
         </div>
     </div>
 </section>
@@ -139,15 +139,15 @@
     <div anim-image class="grid_image">
         <div class="image">
             <div class="image_paralax">
-                <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg" alt="">
+                <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg" alt="">
             </div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
         </div>
     </div>
 </section>

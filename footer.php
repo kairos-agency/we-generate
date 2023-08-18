@@ -2,7 +2,7 @@
     <div class="container">
         <div>
             <a class="logo" href="<?php bloginfo('url') ?>">
-                <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/logo-xl-we-generate.svg" alt="Logo WeGenerate" />
+                <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/logo-xl-we-generate.svg" alt="Logo WeGenerate" />
             </a>
             <div>
                 <div class="column">

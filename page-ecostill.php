@@ -240,15 +240,15 @@
             </div>
             <div class="three-cards">
                 <div class="card" anim-card>
-                    <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/we-generate.png" alt="we-generate logo">
+                    <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/we-generate.png" alt="we-generate logo">
                     <p>Eco Industrial Solutions</p>
                 </div>
                 <div class="card" anim-card>
-                    <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/we-generator.png" alt="we-generator logo">
+                    <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/we-generator.png" alt="we-generator logo">
                     <p>Eco Venture Building</p>
                 </div>
                 <div class="card" anim-card>
-                    <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/we-gen.png" alt="we-gen logo">
+                    <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/we-gen.png" alt="we-gen logo">
                     <p>Eco Technologies</p>
                 </div>
             </div>
