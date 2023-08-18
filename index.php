@@ -65,5 +65,19 @@
         </div>
     </div>
 </section>
+<section class="content-home content-green">
+    <div class="container grid prefooter">
+        <p class="overtitle">Where to find us</p>
+        <h2>Let's Regenerate</h2>
+        <div class="subtitle">
+            <p>Ready for regenerative impact?</p>
+        </div>
+        <div class="cta">
+            <h2>Learn more</h2>
+            <p>Contact us for opportunities to join forces.</p>
+            <a href="#" class="button">Contact us</a>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>
