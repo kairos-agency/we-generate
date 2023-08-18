@@ -152,5 +152,50 @@
     </div>
 </section>
 
+<section class="content-home js-page-home-8">
+    <div class="container grid">
+        <p anim-opacity class="overtitle">Who we are</p>
+        <h2 anim-title>Global Reach.<br />Local.</h2>
+        <div anim-opacity class="subtitle">
+            <p>Award Winning Founder. Industry Veterans. Global Partnerships.</p>
+        </div>
+        <div class="big-three-cards" anim-scale>
+            <h3>Collaborative Solutions for a Sustainable Future</h3>
+            <div class="cards">
+                <div anim-card>
+                    <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/card1.jpg" alt="">
+                    <h4>Global Team</h4>
+                    <p>A global organization composed of a multidisciplinary team.</p>
+                </div>
+                <div anim-card>
+                    <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/card3.jpg" alt="">
+                    <h4>Venture Studio</h4>
+                    <p>An ecotech venture studio for investors and founders.</p>
+                </div>
+                <div anim-card>
+                    <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/card2.jpg" alt="">
+                    <h4>Eco-Engineering</h4>
+                    <p>A contract eco-engineering services firm.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-home content-green js-page-home-9">
+    <div class="container grid prefooter">
+        <p anim-opacity class="overtitle">Where to find us</p>
+        <h2 anim-title>Let's Regenerate</h2>
+        <div anim-opacity class="subtitle">
+            <p>Ready for regenerative impact?</p>
+        </div>
+        <div class="cta">
+            <h2 anim-title>Learn more</h2>
+            <p anim-opacity>Contact us for opportunities to join forces.</p>
+            <a anim-scale href="#" class="button">Contact us</a>
+        </div>
+    </div>
+</section>
+
 
 <?php get_footer(); ?>

@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setVisible('.js-page-home-5', 0.4)
     setVisible('.js-page-home-6', 0.4)
     setVisible('.js-page-home-7', 0.4)
+    setVisible('.js-page-home-8', 0.4)
+    setVisible('.js-page-home-9', 0.4)
 })
 
 function setVisible(element, delay) {
