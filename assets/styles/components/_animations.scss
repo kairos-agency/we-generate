@@ -1,0 +1,73 @@
+[anim-title] {
+    opacity: 0;
+    transform: translateY(100%) scaleY(1.6);
+    transition: opacity 0.6s $ease, transform 0.6s $ease;
+}
+
+[anim-opacity] {
+    opacity: 0;
+    transform: translateY(rem(6));
+    transition: opacity 0.6s $ease 0.15s, transform 0.6s $ease 0.15s;
+}
+
+[anim-scale] {
+    opacity: 0;
+    transform: scale(1.2);
+    transition: opacity 0.6s $ease 0.3s, transform 0.6s $ease 0.3s;
+}
+
+[anim-card] {
+    opacity: 0;
+    transform: scale(1.2);
+    transition: opacity 0.6s $ease 0.3s, transform 0.6s $ease 0.3s;
+    @for $i from 1 through 6 {
+        &:nth-child(#{$i}n) {
+            transition-delay: #{$i * 0.15 + 0.3}s;
+        }
+    }
+}
+
+[anim-list] {
+    opacity: 0;
+    transform: translateY(rem(6));
+    transition: opacity 0.6s $ease 0.3s, transform 0.6s $ease 0.3s;
+    @for $i from 1 through 6 {
+        &:nth-of-type(#{$i}n) {
+            transition-delay: #{$i * 0.1 + 0.3}s;
+        }
+    }
+}
+
+[anim-image] {
+    opacity: 0;
+    transition: opacity 0.6s $ease 0.4s;
+}
+
+header,
+section {
+    &.visible {
+        [anim-title] {
+            opacity: 1;
+            transform: translateY(0) scaleY(1);
+        }
+        [anim-opacity] {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        [anim-scale] {
+            opacity: 1;
+            transform: scale(1);
+        }
+        [anim-card] {
+            opacity: 1;
+            transform: scale(1);
+        }
+        [anim-list] {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        [anim-image] {
+            opacity: 1;
+        }
+    }
+}

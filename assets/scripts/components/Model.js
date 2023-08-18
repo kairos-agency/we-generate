@@ -5,7 +5,7 @@ export default function Model() {
 
     let currentFrame
 
-    currentFrame = index => `http://localhost:8888/we-generate/wp-content/themes/neptune/images/model/${index.toString().padStart(3, '0')}.webp`
+    currentFrame = index => `https://we-generate.kairos-valley.net/wp-content/themes/neptune/images/model/${index.toString().padStart(3, '0')}.webp`
 
     const frameCount = 605
 

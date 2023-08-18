@@ -14,7 +14,50 @@ document.addEventListener('DOMContentLoaded', () => {
         setImageAnimationHero()
         setImageAnimation()
     }
+
+    setVisible('.js-page-eco-1', 0)
+    setVisible('.js-page-eco-2', 0.4)
+    setVisible('.js-page-eco-3', 0.4)
+    setVisible('.js-page-eco-4', 0.4)
+    setVisible('.js-page-eco-5', 0.4)
+    setVisible('.js-page-eco-6', 0.4)
+    setVisible('.js-page-eco-7', 0.4)
+
+    setVisible('.js-page-contact', 0)
+
+    setVisible('.js-page-home-1', 0)
+    setVisible('.js-page-home-2', 0.4)
+    setVisible('.js-page-home-3', 0.4)
+    setVisible('.js-page-home-4', 0.4)
+    setVisible('.js-page-home-5', 0.4)
+    setVisible('.js-page-home-6', 0.4)
+    setVisible('.js-page-home-7', 0.4)
 })
+
+function setVisible(element, delay) {
+    const item = document.querySelector(element)
+    if (item) {
+        function callback(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log('visible')
+                    item.classList.add('visible')
+                }
+            })
+        }
+
+        function createObserver(item, callback) {
+            const options = {
+                root: null,
+                threshold: delay
+            }
+            const observer = new IntersectionObserver(callback, options)
+            observer.observe(item)
+        }
+
+        createObserver(item, callback)
+    }
+}
 
 function setImageAnimationHero() {
     document.querySelectorAll('.js-image-hero').forEach(element => {

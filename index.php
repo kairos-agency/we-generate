@@ -26,13 +26,13 @@
     </div>
     <div class="grid_image">
         <div class="image">
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
-            <div class="image_bg" style="background-image: url('http://localhost:8888/we-generate/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
+            <div class="image_bg" style="background-image: url('https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/content-2.jpg')"></div>
         </div>
     </div>
 </section>
@@ -47,17 +47,17 @@
             <h3>Collaborative Solutions for a Sustainable Future</h3>
             <div class="cards">
                 <div>
-                    <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/card1.jpg" alt="">
+                    <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/card1.jpg" alt="">
                     <h4>Global Team</h4>
                     <p>A global organization composed of a multidisciplinary team.</p>
                 </div>
                 <div>
-                    <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/card2.jpg" alt="">
+                    <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/card2.jpg" alt="">
                     <h4>Venture Studio</h4>
                     <p>An ecotech venture studio for investors and founders.</p>
                 </div>
                 <div>
-                    <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/card3.jpg" alt="">
+                    <img src="https://we-generate.kairos-valley.net/wp-content/uploads/2023/08/card3.jpg" alt="">
                     <h4>Eco-Engineering</h4>
                     <p>A contract eco-engineering services firm.</p>
                 </div>

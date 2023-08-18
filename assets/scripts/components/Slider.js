@@ -5,7 +5,7 @@ export default class Slider {
         this.slidesContainer = document.querySelector('.slides')
 
         this.currentSlideIndex = 0
-        this.currentFrame = index => `http://localhost:8888/we-generate/wp-content/themes/neptune/images/loop/${index.toString().padStart(3, '0')}.webp`
+        this.currentFrame = index => `https://we-generate.kairos-valley.net/wp-content/themes/neptune/images/loop/${index.toString().padStart(3, '0')}.webp`
         this.frameCount = 283
         this.currentImage = 0
         this.images = []
