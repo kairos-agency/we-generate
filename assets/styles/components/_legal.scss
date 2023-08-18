@@ -1,10 +1,10 @@
 .legal {
     padding-bottom: rem(9);
     @media (min-width: $from-small) {
-        padding-top: rem(11.5);
+        padding-bottom: rem(11.5);
     }
     @media (min-width: $from-medium) {
-        padding-top: rem(16.5);
+        padding-bottom: rem(16.5);
     }
     .container {
         max-width: rem(55);

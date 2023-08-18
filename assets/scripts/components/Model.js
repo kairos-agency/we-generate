@@ -179,5 +179,5 @@ function animObject(frameIndex) {
 
     text3.style.opacity = text3Opacity
 
-    // gradient.style.opacity = gradientOpacity
+    gradient.style.opacity = gradientOpacity
 }

@@ -99,7 +99,7 @@
             display: block;
             width: 100%;
             height: 25vh;
-            background: linear-gradient(to top, $color-white, transparent);
+            background: linear-gradient(to top, $color-gray-1, transparent);
             position: absolute;
             bottom: 0;
             left: 0;
@@ -146,30 +146,78 @@
     }
 }
 
-// .hero {
-//     .grid {
-//         padding: rem(9) 0 rem(3.5);
-//     }
-//     p {
-//         max-width: rem(24);
-//     }
-// }
+.hero-contact {
+    padding-bottom: rem(9);
+    @media (min-width: $from-small) {
+        padding-bottom: rem(11.5);
+    }
+    @media (min-width: $from-medium) {
+        padding-bottom: rem(16.5);
+    }
+    .container {
+        max-width: rem(55);
+        display: grid;
+        gap: rem(3);
+        @media (min-width: $from-small) {
+            gap: rem(5);
+        }
+    }
+    .info {
+        display: grid;
+        gap: rem(2);
+        @media (min-width: $from-small) {
+            grid-template-columns: 1fr 1fr;
+        }
+        div {
+            display: grid;
+            gap: rem(1);
+            p {
+                font-size: rem(1.1);
+                line-height: 2;
+                @media (min-width: $from-small) {
+                    font-size: rem(1.2);
+                }
+                &:first-of-type {
+                    color: $color-dark;
+                    font-weight: 500;
+                }
+                &:last-of-type {
+                    color: $color-green-1;
+                }
+            }
+        }
+    }
+    p {
+        text-align: left;
+    }
+}
 
-// @media (min-width: $from-small) {
-//     .hero {
-//         .grid {
-//             padding: rem(13) 0 rem(10);
-//         }
-//         p {
-//             max-width: rem(32);
-//         }
-//     }
-// }
+.hero-home {
+    .grid {
+        padding: 0 0 rem(3.5);
+    }
+    .subtitle {
+        max-width: rem(24);
+        margin: 0 auto;
+    }
+}
 
-// @media (min-width: $from-medium) {
-//     .hero {
-//         p {
-//             max-width: rem(48);
-//         }
-//     }
-// }
+@media (min-width: $from-small) {
+    .hero-home {
+        min-height: 250vh;
+        .grid {
+            padding: 0 0 rem(10);
+        }
+        .subtitle {
+            max-width: rem(32);
+        }
+    }
+}
+
+@media (min-width: $from-medium) {
+    .hero-home {
+        .subtitle {
+            max-width: rem(48);
+        }
+    }
+}
