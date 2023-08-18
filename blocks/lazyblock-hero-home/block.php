@@ -1,11 +1,11 @@
-<header class="hero-home js-image-hero">
+<header class="hero-home js-image-hero js-page-home-1">
     <div class="container grid">
-        <h1><?= $attributes['title']; ?></h1>
-        <div class="subtitle"><?= $attributes['text']; ?></div>
-        <a class="btn-primary btn-small" href="<?php bloginfo('url'); ?>/products/ecostill/">Discover more</a>
+        <h1 anim-title><?= $attributes['title']; ?></h1>
+        <div anim-opacity class="subtitle"><?= $attributes['text']; ?></div>
+        <a anim-scale class="btn-primary btn-small" href="<?php bloginfo('url'); ?>/products/ecostill/">Discover more</a>
     </div>
     <?php if (isset($attributes['image']['url'])) : ?>
-        <div class="grid_image">
+        <div anim-image class="grid_image">
             <div class="image">
                 <div class="image_paralax">
                     <img src="<?= esc_url($attributes['image-background']['url']); ?>" alt="<?= esc_url($attributes['image-background']['alt']); ?>">

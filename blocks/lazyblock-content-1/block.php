@@ -1,11 +1,11 @@
-<section class="content-home js-image">
+<section class="content-home js-image js-page-home-2">
     <div class="container grid">
-        <p class="overtitle"><?= $attributes['overtitle']; ?></p>
-        <h2><?= $attributes['title']; ?></h2>
-        <div class="subtitle"><?= $attributes['text']; ?></div>
+        <p anim-opacity class="overtitle"><?= $attributes['overtitle']; ?></p>
+        <h2 anim-title><?= $attributes['title']; ?></h2>
+        <div anim-opacity class="subtitle"><?= $attributes['text']; ?></div>
     </div>
     <?php if (isset($attributes['image']['url'])) : ?>
-        <div class="grid_image">
+        <div anim-image class="grid_image">
             <div class="image">
                 <div class="image_paralax">
                     <img src="<?= esc_url($attributes['image']['url']); ?>" alt="<?= esc_url($attributes['image']['alt']); ?>">
