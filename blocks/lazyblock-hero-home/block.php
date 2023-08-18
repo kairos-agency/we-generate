@@ -1,4 +1,4 @@
-<header class="hero-home js-image">
+<header class="hero-home js-image-hero">
     <div class="container grid">
         <h1><?= $attributes['title']; ?></h1>
         <div class="subtitle"><?= $attributes['text']; ?></div>
