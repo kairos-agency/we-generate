@@ -125,6 +125,7 @@
         </div>
     </div>
 </section>
+
 <section class="section">
     <div class="container grid">
         <div class="content">
@@ -136,15 +137,119 @@
             </div>
             <div class="cards">
                 <div class="card">
-                    <p>Compact</p>
+                    <p>Affordably</p>
                 </div>
                 <div class="card">
-                    <p>Automated</p>
+                    <p>Profitably</p>
                 </div>
                 <div class="card">
-                    <p>Multifonctional</p>
+                    <p>Regenatively</p>
                 </div>
+            </div>
+            <div class="list">
+                <div>
+                    <h4 class="arrow-se">Reduce cost</h4>
+                    <div>
+                        <p>In-House / Onsite Ethanol Production</p>
+                        <ul>
+                            <li>Sourcing</li>
+                            <li>Labor</li>
+                            <li>Maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h4 class="arrow-se">Reduce impact</h4>
+                    <div>
+                        <p>Circular EcoSystemic Design</p>
+                        <ul>
+                            <li>Environmental</li>
+                            <li>Safety</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h4 class="arrow-ne">Increase Autonomy</h4>
+                    <div>
+                        <p>Achieve Resource Independence</p>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h4 class="arrow-ne">Increase Profitability</h4>
+                    <div>
+                        <p>Supplies Multiple Revenue Streams</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="section">
+    <div class="container grid">
+        <div class="content">
+            <div>
+                <p class="overtitle">Who it's for</p>
+                <h2>Cannabis Cultivators, Extractors and Producers</h2>
+            </div>
+            <div class="big-grid">
+                <div class="first-row">
+                    <div>
+                        <h3><strong>Protect</strong> <br />Your Investment</h3>
+                        <p>Ethanol as Sanitizer Ethanol as Disinfectant (for Worker Safety)</p>
+                    </div>
+                    <div>
+                        <h3><strong>Process</strong> <br />Plant Biomass</h3>
+                        <p>Alternative technology that not only <em>produces</em>, but <em>reproduces.</em></p>
+                    </div>
+                    <div>
+                        <h3><strong>Preserve</strong> <br />Products</h3>
+                        <p>Economic systems that not only <em>generate</em>, but <em>regenerate.</em></p>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div>
+                        <h3><strong>Produce</strong> <br />New Products</h3>
+                        <p>Ethanol for Oil Extraction Ethanol as Fuel Source</p>
+                    </div>
+                    <div>
+                        <h3><strong>Promote</strong> <br />Crop Growth</h3>
+                        <p>CO2 Gas Fertilizer Module Biochar Energy & Fertilizer Source Post-Production Effluent Fertilizer Source</p>
+                    </div>
+                    <div>
+                        <h3><strong>Profit</strong> <br />Surplus</h3>
+                        <p>Capitalize upon excess product and co-product yield.
+                            Join our Resorce Resale Network.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container grid">
+        <div class="content">
+            <div>
+                <p class="overtitle">Who we are</p>
+                <h2>About us</h2>
+            </div>
+            <div class="three-cards">
+                <div class="card">
+                    <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/we-generate.png" alt="we-generate logo">
+                    <p>Eco Industrial Solutions</p>
+                </div>
+                <div class="card">
+                    <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/we-generator.png" alt="we-generator logo">
+                    <p>Eco Venture Building</p>
+                </div>
+                <div class="card">
+                    <img src="http://localhost:8888/we-generate/wp-content/uploads/2023/08/we-gen.png" alt="we-gen logo">
+                    <p>Eco Technologies</p>
+                </div>
             </div>
         </div>
     </div>

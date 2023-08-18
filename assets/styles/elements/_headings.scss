@@ -17,6 +17,12 @@ h2 {
 	margin: rem(0.5) 0 rem(1) 0;
 }
 
+h4 {
+	font-size: rem(1);
+	font-weight: 500;
+	color: $color-green-2;
+}
+
 @media (min-width: $from-small) {
 	h1,
 	h2 {
