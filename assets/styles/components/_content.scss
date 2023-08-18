@@ -462,7 +462,7 @@
 @media (min-width: $from-medium) {
     .content-home {
         .grid {
-            padding: 0 rem(15);
+            // padding: 0 rem(15);
         }
         .subtitle {
             max-width: rem(62);
@@ -567,6 +567,14 @@
             align-items: center;
             margin: rem(5) auto 0;
         }
+    }
+}
+
+.js-page-home-7 {
+    padding-bottom: unset;
+    overflow: hidden;
+    .grid {
+        padding-bottom: 0;
     }
 }
 

@@ -79,7 +79,7 @@ function setImageAnimation() {
                 gsap.to(element.querySelector('.image div:nth-of-type(7)'), { scale: 1 + (2.2 - 1) * progress * 1.3 })
                 gsap.to(element.querySelector('.image div:nth-of-type(8)'), { scale: 1 + (2.3 - 1) * progress * 1.35 })
             },
-            start: '75% 75%',
+            start: '100% 100%',
             end: 'bottom top',
             pin: true
         })
@@ -110,7 +110,7 @@ function setImageAnimationHero() {
                 gsap.to(element.querySelector('.image div:nth-of-type(7)'), { scale: 1 + (2.2 - 1) * progress * 1.3 })
                 gsap.to(element.querySelector('.image div:nth-of-type(8)'), { scale: 1 + (2.3 - 1) * progress * 1.35 })
             },
-            start: '25% 25%',
+            start: '50% 50%',
             end: 'bottom top',
             pin: true
         })
