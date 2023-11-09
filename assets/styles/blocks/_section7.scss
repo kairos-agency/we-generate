@@ -1,0 +1,27 @@
+.section7 {
+    margin: rem(9) 0;
+    padding: unset;
+    @media (min-width: $from-small) {
+        margin: rem(11.5) 0;
+    }
+    @media (min-width: $from-medium) {
+        margin: rem(16.5) 0;
+    }
+    .grid {
+        max-width: rem(90);
+        @include flexCenterSpaceBetween(rem(1));
+        > div {
+            @include grid(rem(1));
+        }
+    }
+    h2 {
+        margin-top: unset;
+    }
+    .buttons {
+        @include flexCenterStart(rem(1));
+        margin-top: rem(1);
+        @media (min-width: $from-medium) {
+            width: fit-content;
+        }
+    }
+}

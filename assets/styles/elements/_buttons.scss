@@ -13,6 +13,21 @@
     }
 }
 
+.btn-secondary {
+    width: fit-content;
+    background: $color-green-3;
+    border-radius: rem(0.5);
+    padding: rem(1.5);
+    font-size: rem(1.18);
+    font-weight: 500;
+    color: $color-gray-1;
+    a {
+        font-size: rem(1.18);
+        font-weight: 500;
+        color: $color-gray-1;
+    }
+}
+
 .btn-small {
     padding: rem(1.25) rem(2);
     margin: 0 auto;

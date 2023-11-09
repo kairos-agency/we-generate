@@ -1,0 +1,36 @@
+.section20 {
+    margin: rem(9) 0;
+    padding: unset;
+    @media (min-width: $from-small) {
+        margin: rem(11.5) 0;
+    }
+    @media (min-width: $from-medium) {
+        margin: rem(16.5) 0;
+    }
+    img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+    .grid {
+        max-width: rem(90);
+    }
+    .grid-3 {
+        @include grid(rem(2));
+        @media (min-width: $from-small) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (min-width: $from-medium) {
+            row-gap: rem(4);
+        }
+        div {
+            @include grid(rem(1));
+        }
+    }
+    .btn {
+        @media (min-width: $from-small) {
+            width: fit-content;
+            margin-top: rem(1);
+        }
+    }
+}

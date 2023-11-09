@@ -34,3 +34,43 @@ section {
         }
     }
 }
+
+.overtitle.text {
+    text-align: left;
+}
+
+.title.text {
+    text-align: left;
+}
+
+.subtitle.text {
+    max-width: rem(40);
+    text-align: left;
+}
+
+.title3 {
+    font-size: rem(1.5);
+    font-weight: 500;
+    color: $color-green-2;
+    line-height: 1.4;
+    font-family: 'dejanire-headline', serif;
+    margin-bottom: rem(0.5);
+    @media (min-width: $from-medium) {
+        font-size: rem(2);
+    }
+}
+
+.bg {
+    margin: rem(9) 0;
+    padding: unset;
+    @media (min-width: $from-small) {
+        margin: rem(11.5) 0;
+    }
+    @media (min-width: $from-medium) {
+        margin: rem(16.5) 0;
+    }
+}
+
+.grid.container.max {
+    max-width: rem(60);
+}

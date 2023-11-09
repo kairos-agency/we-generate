@@ -1,0 +1,33 @@
+.section1 {
+    margin: rem(9) 0;
+    padding: unset;
+    @media (min-width: $from-small) {
+        margin: rem(11.5) 0;
+    }
+    @media (min-width: $from-medium) {
+        margin: rem(16.5) 0;
+    }
+    &.center {
+        p,
+        h2 {
+            text-align: center;
+            margin: 0 auto;
+        }
+        .buttons {
+            @media (min-width: $from-medium) {
+                margin: rem(1) auto 0;
+            }
+        }
+    }
+    .grid {
+        @include grid(rem(1));
+        max-width: rem(90);
+    }
+    .buttons {
+        @include flexCenterStart(rem(1));
+        margin-top: rem(1);
+        @media (min-width: $from-medium) {
+            width: fit-content;
+        }
+    }
+}

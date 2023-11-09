@@ -1,0 +1,30 @@
+.section10 {
+    margin: rem(9) 0;
+    padding: unset;
+    @media (min-width: $from-small) {
+        margin: rem(11.5) 0;
+    }
+    @media (min-width: $from-medium) {
+        margin: rem(16.5) 0;
+    }
+    overflow: hidden;
+    .grid {
+        max-width: rem(90);
+        @include flexCenterWrap(rem(0.5), rem(2));
+    }
+    h2 {
+        text-align: center;
+        &:not(:last-of-type) {
+            display: flex;
+            flex-direction: column;
+            gap: rem(0.5);
+            @media (min-width: $from-small) {
+                flex-direction: row;
+                gap: rem(2);
+            }
+            &::after {
+                content: '•';
+            }
+        }
+    }
+}

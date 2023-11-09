@@ -1,0 +1,41 @@
+.section5 {
+    margin: rem(9) 0;
+    padding: unset;
+    @media (min-width: $from-small) {
+        margin: rem(11.5) 0;
+    }
+    @media (min-width: $from-medium) {
+        margin: rem(16.5) 0;
+    }
+    &.center {
+        .grid > p,
+        h2 {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    .grid {
+        max-width: rem(90);
+        @include grid(rem(1));
+    }
+    .grid-4 {
+        @include grid(rem(2));
+        margin-top: rem(1);
+        @media (min-width: $from-small) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: $from-medium) {
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: rem(3);
+        }
+        div {
+            @include grid(rem(1));
+        }
+    }
+    .btn {
+        margin-top: rem(1);
+        @media (min-width: $from-small) {
+            width: fit-content;
+        }
+    }
+}

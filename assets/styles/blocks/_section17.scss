@@ -1,0 +1,17 @@
+.section17 {
+    margin: rem(9) 0;
+    padding: unset;
+    @media (min-width: $from-small) {
+        margin: rem(11.5) 0;
+    }
+    @media (min-width: $from-medium) {
+        margin: rem(16.5) 0;
+    }
+    .grid {
+        max-width: rem(90);
+        @include grid(rem(1));
+    }
+    p:last-of-type {
+        margin: rem(1) 0 0 auto;
+    }
+}

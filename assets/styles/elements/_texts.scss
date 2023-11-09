@@ -41,3 +41,17 @@ p.overtitle {
         font-size: rem(1.5);
     }
 }
+
+.text-big {
+    font-size: rem(1.2);
+    line-height: 1.6;
+    color: $color-green-2;
+    text-align: left;
+    font-weight: 500;
+    @media (min-width: $from-small) {
+        font-size: rem(1.1);
+    }
+    @media (min-width: $from-medium) {
+        font-size: rem(1.8);
+    }
+}

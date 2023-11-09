@@ -1,0 +1,27 @@
+.section12 {
+    margin: rem(9) 0;
+    padding: unset;
+    @media (min-width: $from-small) {
+        margin: rem(11.5) 0;
+    }
+    @media (min-width: $from-medium) {
+        margin: rem(16.5) 0;
+    }
+    .grid {
+        max-width: rem(90);
+        @include flexCenterSpaceBetween(rem(1));
+        @media (min-width: $from-medium) {
+            align-items: center;
+        }
+        > div {
+            @include grid(rem(1));
+        }
+    }
+    .buttons {
+        @include grid(rem(1));
+        @media (min-width: $from-medium) {
+            max-width: rem(18);
+            margin-left: auto;
+        }
+    }
+}

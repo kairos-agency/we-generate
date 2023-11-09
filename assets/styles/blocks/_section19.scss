@@ -1,0 +1,24 @@
+.section19 {
+    margin: rem(9) 0;
+    padding: unset;
+    @media (min-width: $from-small) {
+        margin: rem(11.5) 0;
+    }
+    @media (min-width: $from-medium) {
+        margin: rem(16.5) 0;
+    }
+    .grid {
+        max-width: rem(90);
+        @include grid(rem(1));
+    }
+    p.subtitle.text {
+        max-width: unset;
+    }
+    h2 {
+        text-align: center;
+        margin: 0 auto;
+        @media (min-width: $from-small) {
+            margin-bottom: rem(1);
+        }
+    }
+}
