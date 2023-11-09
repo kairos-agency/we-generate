@@ -301,6 +301,10 @@
         ul {
             list-style-type: square;
             list-style-position: inside;
+            div {
+                margin: unset;
+                padding: unset;
+            }
         }
     }
 }

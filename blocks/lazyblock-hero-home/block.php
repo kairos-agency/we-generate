@@ -1,4 +1,4 @@
-<header class="hero-home js-image-hero" anim>
+<header class="hero-home js-image-hero">
     <div class="container grid">
         <h1 anim-title><?= $attributes['title']; ?></h1>
         <div anim-opacity class="subtitle"><?= $attributes['text']; ?></div>

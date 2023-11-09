@@ -19,17 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', setHeightOfImage)
     }
 
-    // setVisibleAll('.js-page-eco-1', 0)
-    // setVisibleAll('.js-page-eco-2', 0.2)
-    // setVisibleAll('.js-page-eco-3', 0.2)
-    // setVisibleAll('.js-page-eco-4', 0.2)
-    // setVisibleAll('.js-page-eco-5', 0.2)
-    // setVisibleAll('.js-page-eco-6', 0.2)
-    // setVisibleAll('.js-page-eco-7', 0.2)
-
-    // setVisibleAll('.js-page-contact', 0)
-
-    // setVisibleAll('[anim]', 0)
+    setVisibleAll('.hero-home', 0)
+    setVisibleAll('.hero', 0)
+    setVisibleAll('[anim]', 0.2)
 })
 
 function getAbsoluteHeight(el) {
@@ -112,6 +104,7 @@ function setImageAnimationHero() {
 function setVisibleAll(element, delay) {
     const item = document.querySelectorAll(element)
 
+    console.log(item)
     if (item) {
         item.forEach(e => {
             function callback(entries, observer) {
