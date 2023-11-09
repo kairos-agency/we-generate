@@ -1,8 +1,8 @@
-<section class="content-home js-image js-page-home-2">
+<section class="content-home js-image" anim>
     <div class="container grid">
         <p anim-opacity class="overtitle"><?= $attributes['overtitle']; ?></p>
         <h2 anim-title><?= $attributes['title']; ?></h2>
-        <div anim-opacity class="subtitle"><?= $attributes['text']; ?></div>
+        <div anim-opacity class="subtitle"><p><?= $attributes['text']; ?></p></div>
     </div>
     <?php if (isset($attributes['image']['url'])) : ?>
         <div anim-image class="grid_image">

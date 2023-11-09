@@ -19,25 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', setHeightOfImage)
     }
 
-    setVisible('.js-page-eco-1', 0)
-    setVisible('.js-page-eco-2', 0.2)
-    setVisible('.js-page-eco-3', 0.2)
-    setVisible('.js-page-eco-4', 0.2)
-    setVisible('.js-page-eco-5', 0.2)
-    setVisible('.js-page-eco-6', 0.2)
-    setVisible('.js-page-eco-7', 0.2)
+    // setVisibleAll('.js-page-eco-1', 0)
+    // setVisibleAll('.js-page-eco-2', 0.2)
+    // setVisibleAll('.js-page-eco-3', 0.2)
+    // setVisibleAll('.js-page-eco-4', 0.2)
+    // setVisibleAll('.js-page-eco-5', 0.2)
+    // setVisibleAll('.js-page-eco-6', 0.2)
+    // setVisibleAll('.js-page-eco-7', 0.2)
 
-    setVisible('.js-page-contact', 0)
+    // setVisibleAll('.js-page-contact', 0)
 
-    setVisible('.js-page-home-1', 0)
-    setVisible('.js-page-home-2', 0.2)
-    setVisible('.js-page-home-3', 0.2)
-    setVisible('.js-page-home-4', 0.2)
-    setVisible('.js-page-home-5', 0.2)
-    setVisible('.js-page-home-6', 0.2)
-    setVisible('.js-page-home-7', 0.2)
-    setVisible('.js-page-home-8', 0.2)
-    setVisible('.js-page-home-9', 0.2)
+    // setVisibleAll('[anim]', 0)
 })
 
 function getAbsoluteHeight(el) {
@@ -117,26 +109,29 @@ function setImageAnimationHero() {
     })
 }
 
-function setVisible(element, delay) {
-    const item = document.querySelector(element)
+function setVisibleAll(element, delay) {
+    const item = document.querySelectorAll(element)
+
     if (item) {
-        function callback(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    item.classList.add('visible')
-                }
-            })
-        }
-
-        function createObserver(item, callback) {
-            const options = {
-                root: null,
-                threshold: delay
+        item.forEach(e => {
+            function callback(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        e.classList.add('visible')
+                    }
+                })
             }
-            const observer = new IntersectionObserver(callback, options)
-            observer.observe(item)
-        }
 
-        createObserver(item, callback)
+            function createObserver(e, callback) {
+                const options = {
+                    root: null,
+                    threshold: delay
+                }
+                const observer = new IntersectionObserver(callback, options)
+                observer.observe(e)
+            }
+
+            createObserver(e, callback)
+        })
     }
 }
